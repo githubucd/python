@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://machinelearnia.com/numpy/#ndarray -->
+<html class="html" lang="fr-FR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<meta name="robots" content="max-image-preview:large">
+<link rel="pingback" href="https://machinelearnia.com/xmlrpc.php">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- This site is optimized with the Yoast SEO plugin v14.4.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Tutoriel Numpy: 4 vidéos pour tout comprendre - Machine Learnia</title>
+	<meta name="description" content="Tutoriel complet sur Numpy : les fonctions les plus utiles pour manipuler les tableaux ndarray pour faire du machine learning avec Python">
+	<meta name="robots" content="index, follow">
+	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+	<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+	<link rel="canonical" href="https://machinelearnia.com/numpy/">
+	<meta property="og:locale" content="fr_FR">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Tutoriel Numpy: 4 vidéos pour tout comprendre - Machine Learnia">
+	<meta property="og:description" content="Tutoriel complet sur Numpy : les fonctions les plus utiles pour manipuler les tableaux ndarray pour faire du machine learning avec Python">
+	<meta property="og:url" content="https://machinelearnia.com/numpy/">
+	<meta property="og:site_name" content="Machine Learnia">
+	<meta property="article:published_time" content="2019-09-27T15:35:56+00:00">
+	<meta property="article:modified_time" content="2019-11-26T17:46:32+00:00">
+	<meta property="og:image" content="https://machinelearnia.com/wp-content/uploads/2019/09/Vignette-YT-Python-0000115_7.png">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:creator" content="@MLearnia">
+	<meta name="twitter:site" content="@MLearnia">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://machinelearnia.com/#website","url":"https://machinelearnia.com/","name":"Machine Learnia","description":"Formation Gratuite Machine Learning et Deep Learning","publisher":{"@id":"https://machinelearnia.com/#/schema/person/6eecd5fc9d08cc9cca42a0165e88147c"},"potentialAction":[{"@type":"SearchAction","target":"https://machinelearnia.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"fr-FR"},{"@type":"ImageObject","@id":"https://machinelearnia.com/numpy/#primaryimage","inLanguage":"fr-FR","url":"https://machinelearnia.com/wp-content/uploads/2019/09/Vignette-YT-Python-0000115_7.png","width":1280,"height":720},{"@type":"WebPage","@id":"https://machinelearnia.com/numpy/#webpage","url":"https://machinelearnia.com/numpy/","name":"Tutoriel Numpy: 4 vid\u00e9os pour tout comprendre - Machine Learnia","isPartOf":{"@id":"https://machinelearnia.com/#website"},"primaryImageOfPage":{"@id":"https://machinelearnia.com/numpy/#primaryimage"},"datePublished":"2019-09-27T15:35:56+00:00","dateModified":"2019-11-26T17:46:32+00:00","description":"Tutoriel complet sur Numpy : les fonctions les plus utiles pour manipuler les tableaux ndarray pour faire du machine learning avec Python","breadcrumb":{"@id":"https://machinelearnia.com/numpy/#breadcrumb"},"inLanguage":"fr-FR","potentialAction":[{"@type":"ReadAction","target":["https://machinelearnia.com/numpy/"]}]},{"@type":"BreadcrumbList","@id":"https://machinelearnia.com/numpy/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://machinelearnia.com/","url":"https://machinelearnia.com/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://machinelearnia.com/python-machine-learning/","url":"https://machinelearnia.com/python-machine-learning/","name":"Python"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://machinelearnia.com/numpy/","url":"https://machinelearnia.com/numpy/","name":"Tutoriel Numpy: 4 vid\u00e9os pour tout comprendre"}}]},{"@type":"Article","@id":"https://machinelearnia.com/numpy/#article","isPartOf":{"@id":"https://machinelearnia.com/numpy/#webpage"},"author":{"@id":"https://machinelearnia.com/#/schema/person/6eecd5fc9d08cc9cca42a0165e88147c"},"headline":"Tutoriel Numpy: 4 vid\u00e9os pour tout comprendre","datePublished":"2019-09-27T15:35:56+00:00","dateModified":"2019-11-26T17:46:32+00:00","commentCount":5,"mainEntityOfPage":{"@id":"https://machinelearnia.com/numpy/#webpage"},"publisher":{"@id":"https://machinelearnia.com/#/schema/person/6eecd5fc9d08cc9cca42a0165e88147c"},"image":{"@id":"https://machinelearnia.com/numpy/#primaryimage"},"articleSection":"Python","inLanguage":"fr-FR","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://machinelearnia.com/numpy/#respond"]}]},{"@type":["Person","Organization"],"@id":"https://machinelearnia.com/#/schema/person/6eecd5fc9d08cc9cca42a0165e88147c","name":"Guillaume Saint-Cirgue","image":{"@type":"ImageObject","@id":"https://machinelearnia.com/#personlogo","inLanguage":"fr-FR","url":"https://secure.gravatar.com/avatar/430a8ec3bdbef965789d1ea85d7151ff?s=96&d=retro&r=g","caption":"Guillaume Saint-Cirgue"},"logo":{"@id":"https://machinelearnia.com/#personlogo"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Machine Learnia » Flux" href="https://machinelearnia.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Machine Learnia » Flux des commentaires" href="https://machinelearnia.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Machine Learnia » Tutoriel Numpy: 4 vidéos pour tout comprendre Flux des commentaires" href="https://machinelearnia.com/numpy/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/machinelearnia.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7.1"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./numpy11_files/wp-emoji-release.min.js.téléchargement" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-quicklatex-format-css" href="./numpy11_files/quicklatex-format.css" type="text/css" media="all">
+<link rel="stylesheet" id="pt-cv-public-style-css" href="./numpy11_files/cv.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="./numpy11_files/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-theme-css" href="./numpy11_files/theme.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="./numpy11_files/all.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="simple-line-icons-css" href="./numpy11_files/simple-line-icons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="magnific-popup-css" href="./numpy11_files/magnific-popup.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="slick-css" href="./numpy11_files/slick.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="oceanwp-style-css" href="./numpy11_files/style.min(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="oceanwp-google-font-assistant-css" href="./numpy11_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="oe-widgets-style-css" href="./numpy11_files/widgets.css" type="text/css" media="all">
+<link rel="stylesheet" id="oss-social-share-style-css" href="./numpy11_files/style.min(2).css" type="text/css" media="all">
+<script>if (document.location.protocol != "https:") {document.location = document.URL.replace(/^http:/i, "https:");}</script><script type="text/javascript" src="./numpy11_files/jquery.min.js.téléchargement" id="jquery-core-js"></script>
+<script type="text/javascript" src="./numpy11_files/jquery-migrate.min.js.téléchargement" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="./numpy11_files/wp-quicklatex-frontend.js.téléchargement" id="wp-quicklatex-frontend-js"></script>
+<link rel="https://api.w.org/" href="https://machinelearnia.com/wp-json/"><link rel="alternate" type="application/json" href="https://machinelearnia.com/wp-json/wp/v2/posts/1452"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://machinelearnia.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://machinelearnia.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.7.1">
+<link rel="shortlink" href="https://machinelearnia.com/?p=1452">
+<link rel="alternate" type="application/json+oembed" href="https://machinelearnia.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmachinelearnia.com%2Fnumpy%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://machinelearnia.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmachinelearnia.com%2Fnumpy%2F&amp;format=xml">
+<script>
+
+	/* write your JavaScript code here */
+
+</script>
+		<script>
+			document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );
+		</script>
+				<style>
+			.no-js img.lazyload { display: none; }
+			figure.wp-block-image img.lazyloading { min-width: 150px; }
+							.lazyload, .lazyloading { opacity: 0; }
+				.lazyloaded {
+					opacity: 1;
+					transition: opacity 400ms;
+					transition-delay: 0ms;
+				}
+					</style>
+		<link rel="icon" href="https://machinelearnia.com/wp-content/uploads/2019/03/cropped-Logo-png-32x32.png" sizes="32x32">
+<link rel="icon" href="https://machinelearnia.com/wp-content/uploads/2019/03/cropped-Logo-png-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://machinelearnia.com/wp-content/uploads/2019/03/cropped-Logo-png-180x180.png">
+<meta name="msapplication-TileImage" content="https://machinelearnia.com/wp-content/uploads/2019/03/cropped-Logo-png-270x270.png">
+<!-- OceanWP CSS -->
+<style type="text/css">
+/* General CSS */body,.has-parallax-footer:not(.separate-layout) #main{background-color:#f2f2f2}a{color:#13aff0}a:hover{color:#0bc1b5}.page-header .page-header-title,.page-header.background-image-page-header .page-header-title{color:#0a0a0a}/* Top Bar CSS */#top-bar-social li a{font-size:9px}/* Header CSS */#site-logo #site-logo-inner,.oceanwp-social-menu .social-menu-inner,#site-header.full_screen-header .menu-bar-inner,.after-header-content .after-header-content-inner{height:68px}#site-navigation-wrap .dropdown-menu >li >a,.oceanwp-mobile-menu-icon a,.after-header-content-inner >a{line-height:68px}#site-header,.has-transparent-header .is-sticky #site-header,.has-vh-transparent .is-sticky #site-header.vertical-header,#searchform-header-replace{background-color:#3aafa9}#site-header{border-color:#ffffff}#site-header.has-header-media .overlay-header-media{background-color:rgba(10,0,0,0.3)}#site-logo #site-logo-inner a img,#site-header.center-header #site-navigation-wrap .middle-site-logo a img{max-width:236px}#site-header #site-logo #site-logo-inner a img,#site-header.center-header #site-navigation-wrap .middle-site-logo a img{max-height:272px}#site-logo a.site-logo-text{color:#ffffff}#site-logo a.site-logo-text:hover{color:#000000}#site-navigation-wrap .dropdown-menu >li >a{padding:0 29px}#site-navigation-wrap .dropdown-menu >li >a,.oceanwp-mobile-menu-icon a,#searchform-header-replace-close{color:#ffffff}#site-navigation-wrap .dropdown-menu >li >a:hover,.oceanwp-mobile-menu-icon a:hover,#searchform-header-replace-close:hover{color:#2b7a78}#site-navigation-wrap .dropdown-menu >.current-menu-item >a,#site-navigation-wrap .dropdown-menu >.current-menu-ancestor >a,#site-navigation-wrap .dropdown-menu >.current-menu-item >a:hover,#site-navigation-wrap .dropdown-menu >.current-menu-ancestor >a:hover{color:#17252a}#site-navigation-wrap .dropdown-menu >li >a:hover,#site-navigation-wrap .dropdown-menu >li.sfHover >a{background-color:#def2f1}.dropdown-menu .sub-menu,#searchform-dropdown,.current-shop-items-dropdown{background-color:#def2f1}.dropdown-menu .sub-menu,#searchform-dropdown,.current-shop-items-dropdown{border-color:#2b7a78}/* Blog CSS */.blog-entry.thumbnail-entry .blog-entry-category a{color:#00cec7}/* Sidebar CSS */.widget-title{margin-bottom:22px}/* Typography CSS */body{font-weight:400;font-size:16px;color:#707070}h1,h2,h3,h4,h5,h6,.theme-heading,.widget-title,.oceanwp-widget-recent-posts-title,.comment-reply-title,.entry-title,.sidebar-box .widget-title{letter-spacing:.6px}h1{font-size:32px;line-height:1.3}h2{font-size:32px;line-height:1.6}h3{font-size:24px;line-height:1.7}h4{font-size:20px}#site-logo a.site-logo-text{line-height:1.7;letter-spacing:2.1px}#site-navigation-wrap .dropdown-menu >li >a,#site-header.full_screen-header .fs-dropdown-menu >li >a,#site-header.top-header #site-navigation-wrap .dropdown-menu >li >a,#site-header.center-header #site-navigation-wrap .dropdown-menu >li >a,#site-header.medium-header #site-navigation-wrap .dropdown-menu >li >a,.oceanwp-mobile-menu-icon a{font-weight:700;font-style:normal;font-size:15px;letter-spacing:2.2px;text-transform:uppercase}.page-header .page-header-title,.page-header.background-image-page-header .page-header-title{font-size:20px;text-transform:uppercase}.site-breadcrumbs{font-family:Assistant;font-style:italic;font-size:15px}.blog-entry.post .blog-entry-header .entry-title a{line-height:1.5}.single-post .entry-title{line-height:1.5;letter-spacing:1.3px}
+</style><link rel="stylesheet" type="text/css" href="./numpy11_files/shCore.css"><link rel="stylesheet" type="text/css" href="./numpy11_files/shThemeMidnight.css"><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+
+<body data-rsssl="1" class="post-template-default single single-post postid-1452 single-format-standard wp-custom-logo wp-embed-responsive oceanwp-theme sidebar-mobile separate-layout no-header-border default-breakpoint has-sidebar content-right-sidebar post-in-category-python-machine-learning page-header-disabled elementor-default" itemscope="itemscope" itemtype="https://schema.org/Article">
+
+	
+	
+	<div id="outer-wrap" class="site clr">
+
+		<a class="skip-link screen-reader-text" href="https://machinelearnia.com/numpy/#main">Skip to content</a>
+
+		
+		<div id="wrap" class="clr">
+
+			
+			
+<header id="site-header" class="minimal-header left-menu clr" data-height="68" itemscope="itemscope" itemtype="https://schema.org/WPHeader" role="banner">
+
+	
+		
+			
+			<div id="site-header-inner" class="clr container">
+
+				
+				
+
+<div id="site-logo" class="clr" itemscope="" itemtype="https://schema.org/Brand">
+
+	
+	<div id="site-logo-inner" class="clr">
+
+		<a href="https://machinelearnia.com/" class="custom-logo-link" rel="home"><img width="959" height="113" alt="Machine Learnia" data-srcset="https://machinelearnia.com/wp-content/uploads/2019/07/cropped-Logo-0-00-02-15_3-2.png 959w, https://machinelearnia.com/wp-content/uploads/2019/07/cropped-Logo-0-00-02-15_3-2-300x35.png 300w, https://machinelearnia.com/wp-content/uploads/2019/07/cropped-Logo-0-00-02-15_3-2-768x90.png 768w" data-src="https://machinelearnia.com/wp-content/uploads/2019/07/cropped-Logo-0-00-02-15_3-2.png" data-sizes="(max-width: 959px) 100vw, 959px" class="custom-logo ls-is-cached lazyloaded" src="./numpy11_files/cropped-Logo-0-00-02-15_3-2.png" sizes="(max-width: 959px) 100vw, 959px" srcset="https://machinelearnia.com/wp-content/uploads/2019/07/cropped-Logo-0-00-02-15_3-2.png 959w, https://machinelearnia.com/wp-content/uploads/2019/07/cropped-Logo-0-00-02-15_3-2-300x35.png 300w, https://machinelearnia.com/wp-content/uploads/2019/07/cropped-Logo-0-00-02-15_3-2-768x90.png 768w"><noscript><img width="959" height="113" src="https://machinelearnia.com/wp-content/uploads/2019/07/cropped-Logo-0-00-02-15_3-2.png" class="custom-logo" alt="Machine Learnia" srcset="https://machinelearnia.com/wp-content/uploads/2019/07/cropped-Logo-0-00-02-15_3-2.png 959w, https://machinelearnia.com/wp-content/uploads/2019/07/cropped-Logo-0-00-02-15_3-2-300x35.png 300w, https://machinelearnia.com/wp-content/uploads/2019/07/cropped-Logo-0-00-02-15_3-2-768x90.png 768w" sizes="(max-width: 959px) 100vw, 959px" /></noscript></a>
+	</div><!-- #site-logo-inner -->
+
+	
+	
+</div><!-- #site-logo -->
+
+			<div id="site-navigation-wrap" class="clr">
+		
+			
+			
+			<nav id="site-navigation" class="navigation main-navigation clr" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" role="navigation">
+
+				<ul id="menu-top-menu" class="main-menu dropdown-menu sf-menu sf-js-enabled" style="touch-action: pan-y;"><li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-133"><a href="https://machinelearnia.com/" class="menu-link"><span class="text-wrap">Accueil</span></a></li><li id="menu-item-1470" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1470"><a href="https://machinelearnia.com/machine-learning/" class="menu-link"><span class="text-wrap">Machine Learning</span></a></li><li id="menu-item-1477" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1477"><a href="https://machinelearnia.com/python-machine-learning/" class="menu-link"><span class="text-wrap">Python</span></a></li><li id="menu-item-989" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-989"><a href="https://machinelearnia.com/blog/" class="menu-link"><span class="text-wrap">Blog</span></a></li><li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="https://machinelearnia.com/a-propos/" class="menu-link"><span class="text-wrap">A propos</span></a></li><li class="search-toggle-li"><a href="https://machinelearnia.com/numpy/#" class="site-search-toggle search-dropdown-toggle" aria-label="Search website"><span class="icon-magnifier" aria-hidden="true"></span></a></li></ul>
+<div id="searchform-dropdown" class="header-searchform-wrap clr">
+	
+<form role="search" method="get" class="searchform" action="https://machinelearnia.com/">
+	<label for="ocean-search-form-1">
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" id="ocean-search-form-1" class="field" autocomplete="off" placeholder="Search" name="s">
+			</label>
+	</form></div><!-- #searchform-dropdown -->
+			</nav><!-- #site-navigation -->
+
+			
+			
+					</div><!-- #site-navigation-wrap -->
+		
+		
+	
+				
+	<div class="oceanwp-mobile-menu-icon clr mobile-right">
+
+		
+		
+		
+		<a href="https://machinelearnia.com/numpy/#" class="mobile-menu" aria-label="Menu mobile">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+							<span class="oceanwp-text">Menu</span>
+
+						</a>
+
+		
+		
+		
+	</div><!-- #oceanwp-mobile-menu-navbar -->
+
+
+			</div><!-- #site-header-inner -->
+
+			
+			
+		
+				
+	
+</header><div id="sidr" class="sidr left" style="transition: left 0.3s ease 0s;"><div class="sidr-inner">
+	<a href="https://machinelearnia.com/numpy/#" class="sidr-class-toggle-sidr-close" aria-label="Close mobile Menu">
+		<i class="sidr-class-icon icon-close" aria-hidden="true"></i><span class="sidr-class-close-text">Fermer le menu</span>
+	</a>
+</div><div class="sidr-inner">
+
+		<ul id="sidr-id-menu-top-menu-1" class="sidr-class-mobile-menu sidr-class-dropdown-menu"><li class="sidr-class-menu-item sidr-class-menu-item-type-post_type sidr-class-menu-item-object-page sidr-class-menu-item-home sidr-class-menu-item-133"><a href="https://machinelearnia.com/">Accueil</a></li>
+<li class="sidr-class-menu-item sidr-class-menu-item-type-taxonomy sidr-class-menu-item-object-category sidr-class-menu-item-1470"><a href="https://machinelearnia.com/machine-learning/">Machine Learning</a></li>
+<li class="sidr-class-menu-item sidr-class-menu-item-type-taxonomy sidr-class-menu-item-object-category sidr-class-current-post-ancestor sidr-class-current-menu-parent sidr-class-current-post-parent sidr-class-menu-item-1477"><a href="https://machinelearnia.com/python-machine-learning/">Python</a></li>
+<li class="sidr-class-menu-item sidr-class-menu-item-type-taxonomy sidr-class-menu-item-object-category sidr-class-menu-item-989"><a href="https://machinelearnia.com/blog/">Blog</a></li>
+<li class="sidr-class-menu-item sidr-class-menu-item-type-post_type sidr-class-menu-item-object-page sidr-class-menu-item-76"><a href="https://machinelearnia.com/a-propos/">A propos</a></li>
+</ul>
+	</div><div class="sidr-inner">
+	<form method="get" action="https://machinelearnia.com/" class="sidr-class-mobile-searchform" role="search" aria-label="Search for:">
+		<label for="ocean-mobile-search2">
+			<input type="search" name="s" autocomplete="off" placeholder="Rechercher">
+			<button type="submit" class="sidr-class-searchform-submit" aria-label="Submit Search">
+				<i class="sidr-class-icon icon-magnifier" aria-hidden="true"></i>
+			</button>
+					</label>
+			</form>
+</div></div><!-- #site-header -->
+
+
+			
+			<main id="main" class="site-main clr" role="main">
+
+				
+	
+	<div id="content-wrap" class="container clr">
+
+		
+		<div id="primary" class="content-area clr">
+
+			
+			<div id="content" class="site-content clr">
+
+				
+				
+<article id="post-1452">
+
+	
+
+<header class="entry-header clr">
+	<h1 class="single-post-title entry-title" itemprop="headline">Tutoriel Numpy: 4 vidéos pour tout comprendre</h1><!-- .single-post-title -->
+</header><!-- .entry-header -->
+
+
+
+<ul class="meta clr">
+
+	
+					<li class="meta-author" itemprop="name"><span class="screen-reader-text">Post Author:</span><i class="icon-user" aria-hidden="true"></i><a href="https://machinelearnia.com/author/machi346/" title="Articles par Guillaume Saint-Cirgue" rel="author" itemprop="author" itemscope="itemscope" itemtype="https://schema.org/Person">Guillaume Saint-Cirgue</a></li>
+		
+		
+		
+		
+		
+	
+		
+					<li class="meta-date" itemprop="datePublished"><span class="screen-reader-text">Post published:</span><i class="icon-clock" aria-hidden="true"></i>septembre 27, 2019</li>
+		
+		
+		
+		
+	
+		
+		
+		
+					<li class="meta-cat"><span class="screen-reader-text">Post Category:</span><i class="icon-folder" aria-hidden="true"></i><a href="https://machinelearnia.com/python-machine-learning/" rel="category tag">Python</a></li>
+		
+		
+	
+		
+		
+		
+		
+					<li class="meta-comments"><span class="screen-reader-text">Post Comments:</span><i class="icon-bubble" aria-hidden="true"></i><a href="https://machinelearnia.com/numpy/#comments" class="comments-link">5 commentaires</a></li>
+		
+	
+</ul>
+
+
+
+<div class="entry-content clr" itemprop="text">
+	
+<p>Si vous utilisez Python pour faire du Machine Learning, du Deep Learning, de l’ingénierie ou tout autre chose qui touche aux <strong>mathématiques</strong>, alors <strong>vous devez commencer</strong> par apprendre <strong>Numpy</strong>. <strong>C’est IMPÉRATIF !</strong></p>
+
+
+
+<p><strong>Pourquoi ?</strong> Parce que <strong>Numpy </strong>est <strong>LE package</strong> qui permet de créer des <strong>matrices</strong> et de faire des mathématiques de manière <strong>ultra-performante</strong> (Numpy étant développé en C) ! Si vous êtes ingénieur, scientifique ou mathématicien, vous le savez sans doute: les matrices sont la base de tout.</p>
+
+
+
+<hr class="wp-block-separator">
+
+
+
+<p>Cet article représente une formation <strong>complète </strong>à Numpy. A la fin, vous serez capable de créer des matrices, de faire des mathématiques avec, et vous ne rencontrerez jamais de bug en utilisant Numpy !</p>
+
+
+
+<p>Au menu:</p>
+
+
+
+<ol><li><strong><a href="https://machinelearnia.com/numpy/#ndarray">NDarray</a></strong><a href="https://machinelearnia.com/numpy/#ndarray"> </a>: Le tableau Numpy à N-Dimensions<ul><li><strong>NDArray</strong>: ndim, shape, size</li><li><strong>générateurs</strong>: np.ones(), np.zeros(), np.random.randn(), …</li><li><strong>méthodes</strong>: ravel(), reshape(), concatenate(), …</li></ul></li><li><strong><a href="https://machinelearnia.com/numpy/#indexing">Indexing, Slicing</a></strong> dans Numpy<ul><li><strong>Boolean indexing</strong></li><li>exemple sur <strong>traitement d’image</strong></li></ul></li><li><strong><a href="https://machinelearnia.com/numpy/#maths">Statistiques et Algèbre Linéaire</a></strong> avec Numpy<ul><li>argmax(), argsort(), sum()</li><li><strong>Statistiques</strong> + np.unique(), np.corrcoef()</li><li><strong>Algèbre linéaire</strong></li></ul></li><li><strong><a href="https://machinelearnia.com/numpy/#broadcasting">Broadcasting</a></strong> dans Numpy<ul><li><strong>Danger </strong>! Programme de machine learning</li><li>Bilan</li></ul></li></ol>
+
+
+
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 id="ndarray">1. Numpy ndarray: Le tableau à N-Dimensions</h2>
+
+
+
+<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<div class="oceanwp-oembed-wrap clr"><iframe loading="lazy" title="PYTHON NUMPY machine learning (10/30)" width="1200" height="675" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" data-src="https://www.youtube.com/embed/NzDQTrqsxas?feature=oembed" class=" lazyloaded" src="./numpy11_files/saved_resource.html"></iframe></div>
+</div></figure>
+
+
+
+<p>Au cœur de Numpy se trouve un objet <strong>très puissant</strong>: Le tableau à N-Dimensions (<strong>ndarray</strong>). </p>
+
+
+
+<p>Si j’affirme que c’est un objet puissant, c’est parce qu’il permet d’effectuer beaucoup d’actions mathématiques <strong>avancées</strong>, il permet de contenir une<strong> infinité de données</strong>, et est <strong>très rapide d’exécution</strong>.</p>
+
+
+
+<div class="wp-block-image"><figure class="alignright is-resized"><img loading="lazy" alt="" width="381" height="213" data-srcset="https://machinelearnia.com/wp-content/uploads/2019/09/numpy-image-1024x576.png 1024w, https://machinelearnia.com/wp-content/uploads/2019/09/numpy-image-300x169.png 300w, https://machinelearnia.com/wp-content/uploads/2019/09/numpy-image-768x432.png 768w, https://machinelearnia.com/wp-content/uploads/2019/09/numpy-image.png 1280w" data-src="https://machinelearnia.com/wp-content/uploads/2019/09/numpy-image-1024x576.png" data-sizes="(max-width: 381px) 100vw, 381px" class="wp-image-1622 lazyloaded" src="./numpy11_files/numpy-image-1024x576.png" sizes="(max-width: 381px) 100vw, 381px" srcset="https://machinelearnia.com/wp-content/uploads/2019/09/numpy-image-1024x576.png 1024w, https://machinelearnia.com/wp-content/uploads/2019/09/numpy-image-300x169.png 300w, https://machinelearnia.com/wp-content/uploads/2019/09/numpy-image-768x432.png 768w, https://machinelearnia.com/wp-content/uploads/2019/09/numpy-image.png 1280w"><noscript><img loading="lazy" src="https://machinelearnia.com/wp-content/uploads/2019/09/numpy-image-1024x576.png" alt="" class="wp-image-1622" width="381" height="213" srcset="https://machinelearnia.com/wp-content/uploads/2019/09/numpy-image-1024x576.png 1024w, https://machinelearnia.com/wp-content/uploads/2019/09/numpy-image-300x169.png 300w, https://machinelearnia.com/wp-content/uploads/2019/09/numpy-image-768x432.png 768w, https://machinelearnia.com/wp-content/uploads/2019/09/numpy-image.png 1280w" sizes="(max-width: 381px) 100vw, 381px" /></noscript></figure></div>
+
+
+
+<p>En ingénierie, machine learning et Data Science, on travaille le plus souvent avec des tableaux à 2 dimensions (dataset, image, matrice). Parfois à 3 dimensions (pour une image en couleur, qui contient les couches Rouge, Vert, Bleu)</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><img loading="lazy" width="1024" height="217" alt="" data-srcset="https://machinelearnia.com/wp-content/uploads/2019/09/ndarray-1024x217.png 1024w, https://machinelearnia.com/wp-content/uploads/2019/09/ndarray-300x64.png 300w, https://machinelearnia.com/wp-content/uploads/2019/09/ndarray-768x163.png 768w, https://machinelearnia.com/wp-content/uploads/2019/09/ndarray.png 1335w" data-src="https://machinelearnia.com/wp-content/uploads/2019/09/ndarray-1024x217.png" data-sizes="(max-width: 1024px) 100vw, 1024px" class="wp-image-1621 lazyloaded" src="./numpy11_files/ndarray-1024x217.png" sizes="(max-width: 1024px) 100vw, 1024px" srcset="https://machinelearnia.com/wp-content/uploads/2019/09/ndarray-1024x217.png 1024w, https://machinelearnia.com/wp-content/uploads/2019/09/ndarray-300x64.png 300w, https://machinelearnia.com/wp-content/uploads/2019/09/ndarray-768x163.png 768w, https://machinelearnia.com/wp-content/uploads/2019/09/ndarray.png 1335w"><noscript><img loading="lazy" width="1024" height="217" src="https://machinelearnia.com/wp-content/uploads/2019/09/ndarray-1024x217.png" alt="" class="wp-image-1621" srcset="https://machinelearnia.com/wp-content/uploads/2019/09/ndarray-1024x217.png 1024w, https://machinelearnia.com/wp-content/uploads/2019/09/ndarray-300x64.png 300w, https://machinelearnia.com/wp-content/uploads/2019/09/ndarray-768x163.png 768w, https://machinelearnia.com/wp-content/uploads/2019/09/ndarray.png 1335w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></figure></div>
+
+
+
+<h3>Générateurs de tableaux Numpy</h3>
+
+
+<div><div id="highlighter_221102" class="syntaxhighlighter  python"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="python plain">A </code><code class="python keyword">=</code> <code class="python plain">np.zeros((</code><code class="python value">2</code><code class="python plain">, </code><code class="python value">3</code><code class="python plain">)) </code><code class="python comments"># tableau de 0 aux dimensions 2x3</code></div><div class="line number2 index1 alt1"><code class="python plain">B </code><code class="python keyword">=</code> <code class="python plain">np.ones((</code><code class="python value">2</code><code class="python plain">, </code><code class="python value">3</code><code class="python plain">)) </code><code class="python comments"># tableau de 1 aux dimensions 2x3</code></div><div class="line number3 index2 alt2"><code class="python plain">C </code><code class="python keyword">=</code> <code class="python plain">np.random.randn(</code><code class="python value">2</code><code class="python plain">, </code><code class="python value">3</code><code class="python plain">) </code><code class="python comments"># tableau aléatoire (distribution normale) aux dimensions 2x3</code></div><div class="line number4 index3 alt1"><code class="python plain">D </code><code class="python keyword">=</code> <code class="python plain">np.random.rand(</code><code class="python value">2</code><code class="python plain">, </code><code class="python value">3</code><code class="python plain">) </code><code class="python comments"># tableau aléatoire (distribution uniforme)</code></div><div class="line number5 index4 alt2">&nbsp;</div><div class="line number6 index5 alt1"><code class="python plain">E </code><code class="python keyword">=</code> <code class="python plain">np.random.randint(</code><code class="python value">0</code><code class="python plain">, </code><code class="python value">10</code><code class="python plain">, [</code><code class="python value">2</code><code class="python plain">, </code><code class="python value">3</code><code class="python plain">]) </code><code class="python comments"># tableau d'entiers aléatoires de 0 a 10 et de dimension 2x3</code></div></div></td></tr></tbody></table></div></div>
+
+
+<p> Il est d’ailleurs possible de choisir le type de données qu’on souhaite utiliser pour notre tableau à l’aide du paramètre<strong> dtype</strong>. Celui-ci peut s’avérer crucial pour des codes puissants et performants.</p>
+
+
+<div><div id="highlighter_881405" class="syntaxhighlighter  python"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="python plain">A </code><code class="python keyword">=</code> <code class="python plain">np.ones((</code><code class="python value">2</code><code class="python plain">, </code><code class="python value">3</code><code class="python plain">), dtype</code><code class="python keyword">=</code><code class="python plain">np.float16)</code></div><div class="line number2 index1 alt1"><code class="python plain">B </code><code class="python keyword">=</code> <code class="python plain">np.eye(</code><code class="python value">4</code><code class="python plain">, dtype</code><code class="python keyword">=</code><code class="python plain">np.</code><code class="python functions">bool</code><code class="python plain">) </code><code class="python comments"># créer une matrice identité et convertit les éléments en type bool.</code></div></div></td></tr></tbody></table></div></div>
+
+
+<p>La classe du tableau à N-Dimensions (ndarray) propose plusieurs <strong>attributs </strong>et <strong>méthodes</strong>. Voici les plus utiles, qu’il faut absolument connaitre !</p>
+
+
+
+<h3>Attributs importants de ndarray</h3>
+
+
+<div><div id="highlighter_683342" class="syntaxhighlighter  python"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="python plain">A </code><code class="python keyword">=</code> <code class="python plain">np.zeros((</code><code class="python value">2</code><code class="python plain">, </code><code class="python value">3</code><code class="python plain">)) </code><code class="python comments"># création d'un tableau de shape (2, 3)</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="python functions">print</code><code class="python plain">(A.size) </code><code class="python comments"># le nombre d'éléments dans le tableau A</code></div><div class="line number4 index3 alt1"><code class="python functions">print</code><code class="python plain">(A.shape) </code><code class="python comments"># les dimensions du tableau A (sous forme de Tuple)</code></div><div class="line number5 index4 alt2">&nbsp;</div><div class="line number6 index5 alt1"><code class="python functions">print</code><code class="python plain">(</code><code class="python functions">type</code><code class="python plain">(A.shape)) </code><code class="python comments"># voici la preuve que la shape est un tuple</code></div><div class="line number7 index6 alt2">&nbsp;</div><div class="line number8 index7 alt1"><code class="python functions">print</code><code class="python plain">(A.shape[</code><code class="python value">0</code><code class="python plain">]) </code><code class="python comments"># le nombre d'éléments dans la premiere dimension de A</code></div></div></td></tr></tbody></table></div></div>
+
+
+<h3>Méthodes importantes de ndarray</h3>
+
+
+<div><div id="highlighter_26186" class="syntaxhighlighter  python"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="python plain">A </code><code class="python keyword">=</code> <code class="python plain">np.zeros((</code><code class="python value">2</code><code class="python plain">, </code><code class="python value">3</code><code class="python plain">)) </code><code class="python comments"># création d'un tableau de shape (2, 3)</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="python plain">A </code><code class="python keyword">=</code> <code class="python plain">A.reshape((</code><code class="python value">3</code><code class="python plain">, </code><code class="python value">2</code><code class="python plain">)) </code><code class="python comments"># redimensionne le tableau A (3 lignes, 2 colonnes)</code></div><div class="line number4 index3 alt1"><code class="python plain">A.ravel() </code><code class="python comments"># Aplatit le tableau A (une seule dimension)</code></div><div class="line number5 index4 alt2"><code class="python plain">A.squeeze() </code><code class="python comments"># élimine les dimensions "1" de A.</code></div></div></td></tr></tbody></table></div></div>
+
+
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 id="indexing">2. Indexing et Slicing dans un Tableau Numpy</h2>
+
+
+
+<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<div class="oceanwp-oembed-wrap clr"><iframe loading="lazy" title="PYTHON NUMPY Indexing Slicing Masking (11/30)" width="1200" height="675" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" data-src="https://www.youtube.com/embed/vw4u9uBFFqU?feature=oembed" class=" lazyloaded" src="./numpy11_files/saved_resource(1).html"></iframe></div>
+</div></figure>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column" style="flex-basis:66.66%">
+<p>Lorsqu’on travaille sur un tableau Numpy (le plus souvent 2D), il est important de pouvoir y naviguer facilement afin de pouvoir manipuler les données. Pour cela, on se déplace sur <strong>un axe à la fois</strong>,<strong> </strong>ce qui nous amène à changer notre position seulement en fonction de ce même axe.</p>
+</div>
+
+
+
+<div class="wp-block-column" style="flex-basis:33.33%">
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img loading="lazy" alt="" width="221" height="159" data-srcset="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray.png 310w, https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-300x216.png 300w" data-src="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray.png" data-sizes="(max-width: 221px) 100vw, 221px" class="wp-image-1651 lazyloaded" src="./numpy11_files/ndarray.png" sizes="(max-width: 221px) 100vw, 221px" srcset="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray.png 310w, https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-300x216.png 300w"><noscript><img loading="lazy" src="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray.png" alt="" class="wp-image-1651" width="221" height="159" srcset="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray.png 310w, https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-300x216.png 300w" sizes="(max-width: 221px) 100vw, 221px" /></noscript></figure></div>
+</div>
+</div>
+
+
+
+<h3>Indexing</h3>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column" style="flex-basis:66.66%">
+<p>Comme pour les listes, on choisit d’accéder à un élément particulier du tableau en indiquant un <strong>index </strong>pour cet élément. </p>
+</div>
+
+
+
+<div class="wp-block-column" style="flex-basis:33.33%">
+<figure class="wp-block-image size-large"><img loading="lazy" width="203" height="67" alt="" data-src="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-1.png" class="wp-image-1652 lazyloaded" src="./numpy11_files/ndarray-1.png"><noscript><img loading="lazy" width="203" height="67" src="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-1.png" alt="" class="wp-image-1652"/></noscript></figure>
+</div>
+</div>
+
+
+<div><div id="highlighter_440142" class="syntaxhighlighter  python"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="python plain">A </code><code class="python keyword">=</code> <code class="python plain">np.array([[[</code><code class="python value">1</code><code class="python plain">, </code><code class="python value">2</code><code class="python plain">, </code><code class="python value">3</code><code class="python plain">], [</code><code class="python value">4</code><code class="python plain">, </code><code class="python value">5</code><code class="python plain">, </code><code class="python value">6</code><code class="python plain">]])</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="python functions">print</code><code class="python plain">(A[</code><code class="python value">0</code><code class="python plain">, </code><code class="python value">1</code><code class="python plain">]) </code><code class="python comments"># ligne 0, colonne 1</code></div></div></td></tr></tbody></table></div></div>
+
+
+<h3>Slicing</h3>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column" style="flex-basis:66.66%">
+<p>Dans le cas du slicing, on choisit plutôt d’accéder à plusieurs éléments d’un même axe du tableau. On parlera souvent de <strong>sous-ensemble</strong> (<em>subset</em>). Il faudra donc indiquer un<strong> index de début </strong>et un <strong>index de fin</strong> pour chaque dimension de notre tableau</p>
+
+
+
+<p class="has-text-color has-background has-very-dark-gray-color has-very-light-gray-background-color"><em>Note: L’index de fin n’est jamais compris dans l’opération de Slicing.</em></p>
+</div>
+
+
+
+<div class="wp-block-column" style="flex-basis:33.33%">
+<figure class="wp-block-image size-large"><img loading="lazy" width="220" height="80" alt="" data-src="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-2.png" class="wp-image-1653 lazyloaded" src="./numpy11_files/ndarray-2.png"><noscript><img loading="lazy" width="220" height="80" src="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-2.png" alt="" class="wp-image-1653"/></noscript></figure>
+</div>
+</div>
+
+
+<div><div id="highlighter_301548" class="syntaxhighlighter  python"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="python plain">A </code><code class="python keyword">=</code> <code class="python plain">np.array([[[</code><code class="python value">1</code><code class="python plain">, </code><code class="python value">2</code><code class="python plain">, </code><code class="python value">3</code><code class="python plain">], [</code><code class="python value">4</code><code class="python plain">, </code><code class="python value">5</code><code class="python plain">, </code><code class="python value">6</code><code class="python plain">]])</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="python functions">print</code><code class="python plain">(A[</code><code class="python value">0</code><code class="python plain">:</code><code class="python value">2</code><code class="python plain">, </code><code class="python value">0</code><code class="python plain">:</code><code class="python value">2</code><code class="python plain">]) </code><code class="python comments"># ligne 0 et 1, colonne 0 et 1</code></div></div></td></tr></tbody></table></div></div>
+
+
+<p>Sur Internet, il est courant de voir des opérations de Slicing <strong>“implicites”</strong>, dans lesquelles <strong>seul 1 index</strong> est donné. Ceci extrait toute la ligne correspondante à cet index (voir l’exemple ci-dessous). Pour plus de clarté, je recommande de toujours utiliser une <strong>syntaxe explicite </strong>dans vos codes.</p>
+
+
+<div><div id="highlighter_910035" class="syntaxhighlighter  python"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="python plain">A </code><code class="python keyword">=</code> <code class="python plain">np.array([[[</code><code class="python value">1</code><code class="python plain">, </code><code class="python value">2</code><code class="python plain">, </code><code class="python value">3</code><code class="python plain">], [</code><code class="python value">4</code><code class="python plain">, </code><code class="python value">5</code><code class="python plain">, </code><code class="python value">6</code><code class="python plain">]])</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="python functions">print</code><code class="python plain">(A[</code><code class="python value">1</code><code class="python plain">,:] </code><code class="python comments"># imprime toute la ligne 1, de façon explicite</code></div><div class="line number4 index3 alt1">&nbsp;</div><div class="line number5 index4 alt2"><code class="python functions">print</code><code class="python plain">(A[</code><code class="python value">1</code><code class="python plain">]) </code><code class="python comments"># imprime toute la ligne 1, mais cette syntax n'est pas idéale</code></div></div></td></tr></tbody></table></div></div>
+
+
+<p>A présent, intéressons-nous à une technique très utilisée en Data Science : Le <strong>Boolean Indexing. </strong></p>
+
+
+
+<h3> Boolean Indexing</h3>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column" style="flex-basis:66.66%">
+<p>Lorsqu’on soumet un test Booléen sur Un tableau Numpy (par exemple A &lt; 5) alors Python produit un tableau Numpy de <strong>dtype</strong> <strong>bool</strong> et de <strong>même dimension </strong>que le tableau A. Ce tableau est appelé <strong>masque booléen</strong>. </p>
+</div>
+
+
+
+<div class="wp-block-column" style="flex-basis:33.33%">
+<figure class="wp-block-image size-large"><img loading="lazy" width="249" height="206" alt="" data-src="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-3.png" class="wp-image-1656 lazyloaded" src="./numpy11_files/ndarray-3.png"><noscript><img loading="lazy" width="249" height="206" src="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-3.png" alt="" class="wp-image-1656"/></noscript></figure>
+</div>
+</div>
+
+
+
+<p>Un masque booléen peut être utilisé en tant que filtre pour réaliser une opération de <strong>boolean Indexing</strong> : si un élément respecte une condition donnée (bool = True) alors il est sélectionné pour faire parti du sous-ensemble résultat. </p>
+
+
+
+<p>Cette technique s’avère très utile en analyse de données pour filtrer ou convertir les valeurs d’un tableau lorsque celle-ci sont inférieures ou supérieures à un certain seuil.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="254" height="82" alt="" data-src="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-4.png" class="wp-image-1658 lazyloaded" src="./numpy11_files/ndarray-4.png"><noscript><img loading="lazy" width="254" height="82" src="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-4.png" alt="" class="wp-image-1658"/></noscript></figure></div>
+
+
+<div><div id="highlighter_90787" class="syntaxhighlighter  python"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="python plain">A </code><code class="python keyword">=</code> <code class="python plain">np.array([[[</code><code class="python value">1</code><code class="python plain">, </code><code class="python value">2</code><code class="python plain">, </code><code class="python value">3</code><code class="python plain">], [</code><code class="python value">4</code><code class="python plain">, </code><code class="python value">5</code><code class="python plain">, </code><code class="python value">6</code><code class="python plain">]])</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="python functions">print</code><code class="python plain">(A&lt;</code><code class="python value">5</code><code class="python plain">) </code><code class="python comments"># masque booléen</code></div><div class="line number4 index3 alt1">&nbsp;</div><div class="line number5 index4 alt2"><code class="python functions">print</code><code class="python plain">(A[A &lt; </code><code class="python value">5</code><code class="python plain">] </code><code class="python comments"># sous-ensemble filtré par le masque booléen</code></div><div class="line number6 index5 alt1">&nbsp;</div><div class="line number7 index6 alt2"><code class="python plain">A[A&lt;</code><code class="python value">5</code><code class="python plain">] </code><code class="python keyword">=</code> <code class="python value">4</code> <code class="python comments"># convertit les valeurs sélectionnées.</code></div><div class="line number8 index7 alt1"><code class="python functions">print</code><code class="python plain">(A)</code></div></div></td></tr></tbody></table></div></div>
+
+
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 id="maths">3. Mathématiques avec Numpy</h2>
+
+
+
+<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<div class="oceanwp-oembed-wrap clr"><iframe loading="lazy" title="PYTHON NUMPY STATISTIQUES et MATHÉMATIQUES (12/30)" width="1200" height="675" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" data-src="https://www.youtube.com/embed/RwFiNlL4Q8g?feature=oembed" class=" lazyloaded" src="./numpy11_files/saved_resource(2).html"></iframe></div>
+</div></figure>
+
+
+
+<h3>Mathématiques de Base</h3>
+
+
+
+<p>Faire des mathématiques sur Numpy n’est pas spécialement difficile. En effet, Numpy regorge d’une multitude de fonctions pour faire des statistiques et même de l’algèbre linéaire.</p>
+
+
+
+<p><a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html">La classe <strong>ndarray</strong></a> elle-même contient la plupart des fonctions mathématiques de bases: sommes, produits, moyennes, écart types, etc. Il suffit d’utiliser les quelques méthodes suivantes, chacune pouvant être limitée à un des axes du tableau Numpy</p>
+
+
+<div><div id="highlighter_188832" class="syntaxhighlighter  python"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="python plain">A </code><code class="python keyword">=</code> <code class="python plain">np.array([[[</code><code class="python value">1</code><code class="python plain">, </code><code class="python value">2</code><code class="python plain">, </code><code class="python value">3</code><code class="python plain">], [</code><code class="python value">4</code><code class="python plain">, </code><code class="python value">5</code><code class="python plain">, </code><code class="python value">6</code><code class="python plain">]])</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="python functions">print</code><code class="python plain">(A.</code><code class="python functions">sum</code><code class="python plain">()) </code><code class="python comments"># effectue la somme de tous les éléments du tableau</code></div><div class="line number4 index3 alt1"><code class="python functions">print</code><code class="python plain">(A.</code><code class="python functions">sum</code><code class="python plain">(axis</code><code class="python keyword">=</code><code class="python value">0</code><code class="python plain">) </code><code class="python comments"># effectue la somme des colonnes (somme sur éléments des les lignes)</code></div><div class="line number5 index4 alt2"><code class="python functions">print</code><code class="python plain">(A.</code><code class="python functions">sum</code><code class="python plain">(axis</code><code class="python keyword">=</code><code class="python value">1</code><code class="python plain">) </code><code class="python comments"># effectue la somme des lignes (somme sur les éléments des colonnes)</code></div><div class="line number6 index5 alt1"><code class="python functions">print</code><code class="python plain">(A.cumsum(axis</code><code class="python keyword">=</code><code class="python value">0</code><code class="python plain">) </code><code class="python comments"># effectue la somme cumulée</code></div><div class="line number7 index6 alt2">&nbsp;</div><div class="line number8 index7 alt1"><code class="python functions">print</code><code class="python plain">(A.prod() </code><code class="python comments"># effectue le produit</code></div><div class="line number9 index8 alt2"><code class="python functions">print</code><code class="python plain">(A.cumprod() </code><code class="python comments"># effectue le produit cumulé</code></div><div class="line number10 index9 alt1">&nbsp;</div><div class="line number11 index10 alt2"><code class="python functions">print</code><code class="python plain">(A.</code><code class="python functions">min</code><code class="python plain">() </code><code class="python comments"># trouve le minimum du tableau</code></div><div class="line number12 index11 alt1"><code class="python functions">print</code><code class="python plain">(A.</code><code class="python functions">max</code><code class="python plain">()) </code><code class="python comments"># trouve le maximum du tableau</code></div><div class="line number13 index12 alt2">&nbsp;</div><div class="line number14 index13 alt1"><code class="python functions">print</code><code class="python plain">(A.mean()) </code><code class="python comments"># calcul la moyenne</code></div><div class="line number15 index14 alt2"><code class="python functions">print</code><code class="python plain">(A.std()) </code><code class="python comments"># calcul l'ecart type,</code></div><div class="line number16 index15 alt1"><code class="python functions">print</code><code class="python plain">(A.var()) </code><code class="python comments"># calcul la variance</code></div></div></td></tr></tbody></table></div></div>
+
+
+<p>Parmi ces méthodes, on trouve également la méthode <strong>sort()</strong> qui permet de trier un tableau, mais plus utile encore : la méthode <strong>argsort()</strong></p>
+
+
+
+<h3>Numpy Argsort()</h3>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column" style="flex-basis:66.66%">
+<p>Argsort() retourne les index dans l’ordre de tri du tableau, sans modifier ce dernier. Ces index peuvent ensuite être utilisés pour trier toute autre séquence, selon l’ordre du tableau originel.</p>
+</div>
+
+
+
+<div class="wp-block-column" style="flex-basis:33.33%">
+<figure class="wp-block-image size-large"><img loading="lazy" width="226" height="166" alt="" data-src="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-5.png" class="wp-image-1669 lazyloaded" src="./numpy11_files/ndarray-5.png"><noscript><img loading="lazy" width="226" height="166" src="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-5.png" alt="" class="wp-image-1669"/></noscript></figure>
+</div>
+</div>
+
+
+
+<p>Par exemple, il est possible de trier toute un tableau A en fonction d’une des colonnes de A !</p>
+
+
+<div><div id="highlighter_268992" class="syntaxhighlighter  python"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="python plain">A </code><code class="python keyword">=</code> <code class="python plain">np.random.randint(</code><code class="python value">0</code><code class="python plain">, </code><code class="python value">10</code><code class="python plain">, [</code><code class="python value">5</code><code class="python plain">, </code><code class="python value">5</code><code class="python plain">]) </code><code class="python comments"># tableau aléatoire</code></div><div class="line number2 index1 alt1"><code class="python functions">print</code><code class="python plain">(A)</code></div><div class="line number3 index2 alt2">&nbsp;</div><div class="line number4 index3 alt1"><code class="python functions">print</code><code class="python plain">(A.argsort()) </code><code class="python comments"># retourne les index pour trier chaque ligne du tableau </code></div><div class="line number5 index4 alt2">&nbsp;</div><div class="line number6 index5 alt1"><code class="python functions">print</code><code class="python plain">(A[:,</code><code class="python value">0</code><code class="python plain">].argsort()) </code><code class="python comments"># retourne les index pour trier la colonne 0 de A</code></div><div class="line number7 index6 alt2">&nbsp;</div><div class="line number8 index7 alt1"><code class="python plain">A </code><code class="python keyword">=</code> <code class="python plain">A[A[:,</code><code class="python value">0</code><code class="python plain">].argsort(), :] </code><code class="python comments"># trie les colonnes du tableau selon la colonne 0.</code></div></div></td></tr></tbody></table></div></div>
+
+
+<h3>Numpy Statistics</h3>
+
+
+
+<p>Au delà des méthodes présentes dans la classe ndarray, Numpy propose beaucoup de fonctions mathématiques plus avancées. Il est possible de faire des statistiques, de l’algèbre linéaire, des transformation de Fourier, etc…</p>
+
+
+
+<p> Les  routines spécifiques aux statistiques sont tout <a href="https://docs.scipy.org/doc/numpy/reference/routines.statistics.html">documentées ici.</a> On y retrouve les moyennes, variances, écart type, mais également de quoi calculer des <strong>corrélations </strong>et des <strong>histogrammes</strong>. Parmi ces routines, je recommande de retenir la fonction <strong>corrcoef()</strong>, avec laquelle on peut calculer la corrélation de <strong>Pearson </strong>entre les différentes lignes ou colonnes d’un tableau Numpy.</p>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column" style="flex-basis:66.66%"><div><div id="highlighter_333086" class="syntaxhighlighter  python"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="python plain">B </code><code class="python keyword">=</code> <code class="python plain">np.random.randn(</code><code class="python value">3</code><code class="python plain">, </code><code class="python value">3</code><code class="python plain">) </code><code class="python comments"># nombres aléatoires 3x3</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="python comments"># retourne la matrice de corrélation de B</code></div><div class="line number4 index3 alt1"><code class="python functions">print</code><code class="python plain">(np.corrcoef(B))</code></div><div class="line number5 index4 alt2">&nbsp;</div><div class="line number6 index5 alt1"><code class="python comments"># retourne la matrice de corrélation entre les lignes 0 et 1 de B</code></div><div class="line number7 index6 alt2"><code class="python functions">print</code><code class="python plain">(np.corrcoef(B[:,</code><code class="python value">0</code><code class="python plain">], B[:, </code><code class="python value">1</code><code class="python plain">]))</code></div><div class="line number8 index7 alt1">&nbsp;</div><div class="line number9 index8 alt2"><code class="python comments"># sélectionne la corrélation entre ligne 0 et ligne 1</code></div><div class="line number10 index9 alt1"><code class="python functions">print</code><code class="python plain">(np.corrcoef(B[:,</code><code class="python value">0</code><code class="python plain">], B[:, </code><code class="python value">1</code><code class="python plain">][</code><code class="python value">0</code><code class="python plain">,</code><code class="python value">1</code><code class="python plain">]))</code></div></div></td></tr></tbody></table></div></div></div>
+
+
+
+<div class="wp-block-column" style="flex-basis:33.33%">
+<figure class="wp-block-image size-large"><img loading="lazy" width="328" height="180" alt="" data-srcset="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-6.png 328w, https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-6-300x165.png 300w" data-src="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-6.png" data-sizes="(max-width: 328px) 100vw, 328px" class="wp-image-1673 lazyloaded" src="./numpy11_files/ndarray-6.png" sizes="(max-width: 328px) 100vw, 328px" srcset="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-6.png 328w, https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-6-300x165.png 300w"><noscript><img loading="lazy" width="328" height="180" src="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-6.png" alt="" class="wp-image-1673" srcset="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-6.png 328w, https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-6-300x165.png 300w" sizes="(max-width: 328px) 100vw, 328px" /></noscript></figure>
+</div>
+</div>
+
+
+
+<h3>Statistiques avec NaN</h3>
+
+
+
+<p>En Data Science, il est courant d’avoir des données manquantes dans un Dataset, celles-ci se manifestent alors sous la forme de valeur <strong>NaN</strong> dans un tableau Numpy. Dans ces conditions, il n’est pas possible de faire des calculs statistiques. C’est pourquoi Numpy propose des fonctions telles que <strong>nanmean(), nanstd() </strong>et <strong>nanvar()</strong> qui permettent d’effectuer ces calculs tout en ignorant les valeurs NaN.</p>
+
+
+<div><div id="highlighter_67248" class="syntaxhighlighter  python"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="python plain">A </code><code class="python keyword">=</code> <code class="python plain">np.random.randn(</code><code class="python value">5</code><code class="python plain">, </code><code class="python value">5</code><code class="python plain">)</code></div><div class="line number2 index1 alt1"><code class="python plain">A[</code><code class="python value">0</code><code class="python plain">, </code><code class="python value">2</code><code class="python plain">] </code><code class="python keyword">=</code> <code class="python plain">np.nan </code><code class="python comments"># insere un NaN dans la matrice A</code></div><div class="line number3 index2 alt2">&nbsp;</div><div class="line number4 index3 alt1"><code class="python plain">(np.isnan(A).</code><code class="python functions">sum</code><code class="python plain">()</code><code class="python keyword">/</code><code class="python plain">A.size) </code><code class="python comments"># calcule la proportion de NaN dans A</code></div><div class="line number5 index4 alt2">&nbsp;</div><div class="line number6 index5 alt1"><code class="python functions">print</code><code class="python plain">(np.nanmean(A)) </code><code class="python comments"># calcule la moyenne de A en ignorant les NaN</code></div></div></td></tr></tbody></table></div></div>
+
+
+<div style="height:43px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h3>Algèbre Linéaire avec Numpy</h3>
+
+
+
+<p>Numpy permet également de faire de l’algèbre linéaire grâce aux routines disponibles dans le <a href="https://docs.scipy.org/doc/numpy/reference/routines.linalg.html">package <strong>numpy.linalg</strong></a>. Les routines qui suivent comptent parmi les plus importantes, et permette de calculer le déterminant d’une matrice, d’inverser une matrice, et de calculer ces vecteurs propres et valeurs propres.</p>
+
+
+<div><div id="highlighter_760135" class="syntaxhighlighter  python"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="python plain">A </code><code class="python keyword">=</code> <code class="python plain">np.ones((</code><code class="python value">2</code><code class="python plain">,</code><code class="python value">3</code><code class="python plain">))</code></div><div class="line number2 index1 alt1"><code class="python plain">B </code><code class="python keyword">=</code> <code class="python plain">np.ones((</code><code class="python value">3</code><code class="python plain">,</code><code class="python value">3</code><code class="python plain">))</code></div><div class="line number3 index2 alt2">&nbsp;</div><div class="line number4 index3 alt1"><code class="python functions">print</code><code class="python plain">(</code><code class="python string">'transpose'</code><code class="python plain">, A.T) </code><code class="python comments"># transposé de la matrice A (c'est un attribut de ndarray)</code></div><div class="line number5 index4 alt2">&nbsp;</div><div class="line number6 index5 alt1"><code class="python functions">print</code><code class="python plain">(</code><code class="python string">'produit A.B'</code><code class="python plain">, A.dot(B)) </code><code class="python comments"># produit matriciel A.B</code></div><div class="line number7 index6 alt2">&nbsp;</div><div class="line number8 index7 alt1">&nbsp;</div><div class="line number9 index8 alt2"><code class="python plain">A </code><code class="python keyword">=</code> <code class="python plain">np.random.randint(</code><code class="python value">0</code><code class="python plain">, </code><code class="python value">10</code><code class="python plain">, [</code><code class="python value">3</code><code class="python plain">, </code><code class="python value">3</code><code class="python plain">])</code></div><div class="line number10 index9 alt1">&nbsp;</div><div class="line number11 index10 alt2"><code class="python functions">print</code><code class="python plain">(</code><code class="python string">'det'</code><code class="python plain">, np.linalg.det(A)) </code><code class="python comments"># calcule le determinant de A</code></div><div class="line number12 index11 alt1"><code class="python functions">print</code><code class="python plain">(</code><code class="python string">'inv A'</code><code class="python plain">, np.linalg.inv(A)) </code><code class="python comments"># calcul l'inverse de A</code></div><div class="line number13 index12 alt2">&nbsp;</div><div class="line number14 index13 alt1"><code class="python plain">val, vec </code><code class="python keyword">=</code> <code class="python plain">np.linalg.eig(A)</code></div><div class="line number15 index14 alt2"><code class="python functions">print</code><code class="python plain">(</code><code class="python string">'valeur propre'</code><code class="python plain">, val) </code><code class="python comments"># valeur propre</code></div><div class="line number16 index15 alt1"><code class="python functions">print</code><code class="python plain">(</code><code class="python string">'vecteur propre'</code><code class="python plain">, vec) </code><code class="python comments"># vecteur propre</code></div></div></td></tr></tbody></table></div></div>
+
+
+<p><strong>Bravo ! </strong>Avec le contenu de cette page, vous maîtrisez désormais l’essentiel de Numpy pour faire du Machine Learning, et plus généralement, du calcul scientifique. Pour finir, il est très important de vous familiariser avec une des fondations de Numpy : Le <strong>Broadcasting</strong>.</p>
+
+
+
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 id="broadcasting">4. Broadcasting avec Numpy</h2>
+
+
+
+<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<div class="oceanwp-oembed-wrap clr"><iframe loading="lazy" title="PYTHON NUMPY BROADCASTING (13/30)" width="1200" height="675" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" data-src="https://www.youtube.com/embed/lIESSFHGalA?feature=oembed" class=" lazyloaded" src="./numpy11_files/saved_resource(3).html"></iframe></div>
+</div></figure>
+
+
+
+<p> Habituellement, quand on cherche à effectuer une opération mathématique entre 2 tableaux dans un langage tel que le C++ (par exemple les additionner ensemble)  il faut travailler avec des boucles <strong>for</strong> afin d’accéder aux différents éléments de ces tableaux (et les additionner ensemble)</p>
+
+
+
+<p>Avec Numpy, tout est beaucoup plus simple ! Ce système d’itération <strong>est déjà implémenté</strong> à l’intérieur de la librairie (via le langage C). Ainsi, pour faire l’addition des éléments entre un tableau A et tableau B, il suffit d’écrire A + B.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img loading="lazy" alt="" width="254" height="184" data-src="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-7.png" class="wp-image-1681 lazyloaded" src="./numpy11_files/ndarray-7.png"><noscript><img loading="lazy" src="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-7.png" alt="" class="wp-image-1681" width="254" height="184"/></noscript></figure></div>
+
+
+
+<p>Sur le graphique ci-dessus, les tableaux A et B sont de <strong>mêmes dimensions (2×3)</strong>. Cette condition peut sembler nécessaire pour effectuer une addition sur chacun de leur élément, mais elle ne l’est pas ! Une technique appelée <strong>Broadcasting</strong> permet <strong>d’étendre</strong> les dimensions d’un tableau (lorsque celles-ci <strong>sont égales à 1</strong>) pour couvrir les dimensions de l’autre tableau.</p>
+
+
+
+<h3> Numpy Broadcasting : Les Régles et exemples</h3>
+
+
+
+<p>Pour effectuer une opération mathématique sur 2 tableaux Numpy, c’est simple: Il faut qu’ils aient les <strong>mêmes dimensions</strong>, et si ce n’est pas le cas, le Broadcasting <strong>peut étendre toute dimension égale à 1</strong> pour couvrir la dimension équivalente de l’autre tableau. Voici quelques exemples accompagnés d’illustrations :</p>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column" style="flex-basis:66.66%"><div><div id="highlighter_826705" class="syntaxhighlighter  python"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="python plain">A </code><code class="python keyword">=</code> <code class="python plain">np.ones((</code><code class="python value">2</code><code class="python plain">, </code><code class="python value">3</code><code class="python plain">))</code></div><div class="line number2 index1 alt1"><code class="python plain">B </code><code class="python keyword">=</code> <code class="python value">3</code></div><div class="line number3 index2 alt2"><code class="python functions">print</code><code class="python plain">(A</code><code class="python keyword">+</code><code class="python plain">B) </code><code class="python comments"># résultat 1</code></div><div class="line number4 index3 alt1">&nbsp;</div><div class="line number5 index4 alt2"><code class="python plain">A </code><code class="python keyword">=</code> <code class="python plain">np.ones((</code><code class="python value">2</code><code class="python plain">, </code><code class="python value">3</code><code class="python plain">))</code></div><div class="line number6 index5 alt1"><code class="python plain">B </code><code class="python keyword">=</code> <code class="python plain">np.ones((</code><code class="python value">2</code><code class="python plain">, </code><code class="python value">1</code><code class="python plain">)) </code><code class="python comments"># B a une colonne, elle sera étendu sur les trois colonnes de A</code></div><div class="line number7 index6 alt2"><code class="python functions">print</code><code class="python plain">(A</code><code class="python keyword">+</code><code class="python plain">B) </code><code class="python comments"># résultat 2</code></div><div class="line number8 index7 alt1">&nbsp;</div><div class="line number9 index8 alt2"><code class="python plain">A </code><code class="python keyword">=</code> <code class="python plain">np.ones((</code><code class="python value">2</code><code class="python plain">, </code><code class="python value">3</code><code class="python plain">))</code></div><div class="line number10 index9 alt1"><code class="python plain">B </code><code class="python keyword">=</code> <code class="python plain">np.ones((</code><code class="python value">2</code><code class="python plain">, </code><code class="python value">2</code><code class="python plain">))</code></div><div class="line number11 index10 alt2">&nbsp;</div><div class="line number12 index11 alt1"><code class="python functions">print</code><code class="python plain">(A </code><code class="python keyword">+</code> <code class="python plain">B) </code><code class="python comments"># ERREUR ! Broadcasting incompatible</code></div></div></td></tr></tbody></table></div></div></div>
+
+
+
+<div class="wp-block-column" style="flex-basis:33.33%">
+<figure class="wp-block-image size-large"><img loading="lazy" width="464" height="109" alt="" data-srcset="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-9.png 464w, https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-9-300x70.png 300w" data-src="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-9.png" data-sizes="(max-width: 464px) 100vw, 464px" class="wp-image-1685 lazyloaded" src="./numpy11_files/ndarray-9.png" sizes="(max-width: 464px) 100vw, 464px" srcset="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-9.png 464w, https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-9-300x70.png 300w"><noscript><img loading="lazy" width="464" height="109" src="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-9.png" alt="" class="wp-image-1685" srcset="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-9.png 464w, https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-9-300x70.png 300w" sizes="(max-width: 464px) 100vw, 464px" /></noscript></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="462" height="86" alt="" data-srcset="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-8.png 462w, https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-8-300x56.png 300w" data-src="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-8.png" data-sizes="(max-width: 462px) 100vw, 462px" class="wp-image-1684 lazyloaded" src="./numpy11_files/ndarray-8.png" sizes="(max-width: 462px) 100vw, 462px" srcset="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-8.png 462w, https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-8-300x56.png 300w"><noscript><img loading="lazy" width="462" height="86" src="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-8.png" alt="" class="wp-image-1684" srcset="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-8.png 462w, https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-8-300x56.png 300w" sizes="(max-width: 462px) 100vw, 462px" /></noscript></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="213" height="95" alt="" data-src="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-10.png" class="wp-image-1686 lazyloaded" src="./numpy11_files/ndarray-10.png"><noscript><img loading="lazy" width="213" height="95" src="https://machinelearnia.com/wp-content/uploads/2019/11/ndarray-10.png" alt="" class="wp-image-1686"/></noscript></figure>
+</div>
+</div>
+
+
+
+<p>Attention ! Le Broadcasting réserve souvent de <strong>mauvaises surprises</strong> quand vous oubliez de dimensionner vos tableaux de façon explicite: <em>(3, 1) au lieu de (3,)</em>. Par exemple, additionner un tableau A de dimension (3, 1) avec un tableau de dimension (3, ) ne donnera pas un résultat de dimension (3, 1), mais un résultat de dimension (3, 3) (plus de détails dans la vidéo du dessus)</p>
+
+
+
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2>Numpy : Le Bilan</h2>
+
+
+
+<p>Numpy est le package <strong>fondamental </strong>pour faire du calcul scientifique avec Python. Tous les autres packages importants en Machine Learning (Pandas, Matplotlib, Sklearn) sont <strong>construits </strong>sur la base de Numpy. Il est <strong>indispensable </strong>de bien maîtriser les fonctions de bases présentées dans cet article pour être capable de générer des tableaux, les manipuler (selon leur lignes et leur colonnes) et effectuer quelques opérations mathématiques dessus.<strong> Il n’est pas utile</strong> pour un débutant d’apprendre par cœur d’autres fonctions que celles présentées dans cet article (pourtant de nombreux sites éducatifs noient leurs élèves dans tous les détails de Numpy…)</p>
+
+
+
+<p>Si vous êtes maintenant à l’aise avec Numpy, je vous conseille de vous orienter vers <strong>Matplotlib</strong>, le meilleur package pour créer des graphiques dans Python (et pour visualiser des tableaux Numpy !).</p>
+
+
+
+<p>Je répondrai à toute question posée en commentaire, profitez-en ! <img draggable="false" role="img" class="emoji" alt="🙂" src="./numpy11_files/1f642.svg"></p>
+</div><!-- .entry -->
+
+<div class="post-tags clr">
+	</div>
+
+
+
+	<section id="related-posts" class="clr">
+
+		<h3 class="theme-heading related-posts-title">
+			<span class="text">Vous devriez également aimer</span>
+		</h3>
+
+		<div class="oceanwp-row clr">
+
+			
+			
+				
+				<article class="related-post clr col span_1_of_3 col-1 post-1396 post type-post status-publish format-standard has-post-thumbnail hentry category-python-machine-learning entry has-media">
+
+					
+						<figure class="related-post-media clr">
+
+							<a href="https://machinelearnia.com/formation-python/" class="related-thumb no-lightbox">
+
+								<img width="300" height="169" alt="Apprendre Python en 9 vidéos" loading="lazy" itemprop="image" data-srcset="https://machinelearnia.com/wp-content/uploads/2019/09/Vignette-YT-Python-0000115_6-300x169.png 300w, https://machinelearnia.com/wp-content/uploads/2019/09/Vignette-YT-Python-0000115_6-768x432.png 768w, https://machinelearnia.com/wp-content/uploads/2019/09/Vignette-YT-Python-0000115_6-1024x576.png 1024w, https://machinelearnia.com/wp-content/uploads/2019/09/Vignette-YT-Python-0000115_6.png 1280w" data-src="https://machinelearnia.com/wp-content/uploads/2019/09/Vignette-YT-Python-0000115_6-300x169.png" data-sizes="(max-width: 300px) 100vw, 300px" class="attachment-medium size-medium wp-post-image ls-is-cached lazyloaded" src="./numpy11_files/Vignette-YT-Python-0000115_6-300x169.png" sizes="(max-width: 300px) 100vw, 300px" srcset="https://machinelearnia.com/wp-content/uploads/2019/09/Vignette-YT-Python-0000115_6-300x169.png 300w, https://machinelearnia.com/wp-content/uploads/2019/09/Vignette-YT-Python-0000115_6-768x432.png 768w, https://machinelearnia.com/wp-content/uploads/2019/09/Vignette-YT-Python-0000115_6-1024x576.png 1024w, https://machinelearnia.com/wp-content/uploads/2019/09/Vignette-YT-Python-0000115_6.png 1280w"><noscript><img width="300" height="169" src="https://machinelearnia.com/wp-content/uploads/2019/09/Vignette-YT-Python-0000115_6-300x169.png" class="attachment-medium size-medium wp-post-image" alt="Apprendre Python en 9 vidéos" loading="lazy" itemprop="image" srcset="https://machinelearnia.com/wp-content/uploads/2019/09/Vignette-YT-Python-0000115_6-300x169.png 300w, https://machinelearnia.com/wp-content/uploads/2019/09/Vignette-YT-Python-0000115_6-768x432.png 768w, https://machinelearnia.com/wp-content/uploads/2019/09/Vignette-YT-Python-0000115_6-1024x576.png 1024w, https://machinelearnia.com/wp-content/uploads/2019/09/Vignette-YT-Python-0000115_6.png 1280w" sizes="(max-width: 300px) 100vw, 300px" /></noscript>							</a>
+
+						</figure>
+
+					
+					<h3 class="related-post-title">
+						<a href="https://machinelearnia.com/formation-python/" title="Apprendre Python en 9 vidéos" rel="bookmark">Apprendre Python en 9 vidéos</a>
+					</h3><!-- .related-post-title -->
+
+					<time class="published" datetime="2019-09-03T20:54:18+00:00"><i class="icon-clock" aria-hidden="true"></i>septembre 3, 2019</time>
+
+				</article><!-- .related-post -->
+
+				
+			
+				
+				<article class="related-post clr col span_1_of_3 col-2 post-1636 post type-post status-publish format-standard hentry category-python-machine-learning entry">
+
+					
+					<h3 class="related-post-title">
+						<a href="https://machinelearnia.com/data-science-5-graphiques-a-connaitre-avec-matplotlib/" title="Data Science: 5 Graphiques à connaitre avec Matplotlib" rel="bookmark">Data Science: 5 Graphiques à connaitre avec Matplotlib</a>
+					</h3><!-- .related-post-title -->
+
+					<time class="published" datetime="2019-10-01T10:56:24+00:00"><i class="icon-clock" aria-hidden="true"></i>octobre 1, 2019</time>
+
+				</article><!-- .related-post -->
+
+				
+			
+				
+				<article class="related-post clr col span_1_of_3 col-3 post-1832 post type-post status-publish format-standard hentry category-python-machine-learning entry">
+
+					
+					<h3 class="related-post-title">
+						<a href="https://machinelearnia.com/tutoriel-python-scipy/" title="Tutoriel Python Scipy" rel="bookmark">Tutoriel Python Scipy</a>
+					</h3><!-- .related-post-title -->
+
+					<time class="published" datetime="2020-01-27T09:19:58+00:00"><i class="icon-clock" aria-hidden="true"></i>janvier 27, 2020</time>
+
+				</article><!-- .related-post -->
+
+				
+			
+		</div><!-- .oceanwp-row -->
+
+	</section><!-- .related-posts -->
+
+
+
+
+<section id="comments" class="comments-area clr has-comments">
+
+	
+	
+		<h3 class="theme-heading comments-title">
+			<span class="text">Cet article a 5 commentaires</span>
+		</h3>
+
+		<ol class="comment-list">
+			
+			<li id="comment-71" class="comment-container">
+
+				<article class="comment even thread-even depth-1 comment-body">
+
+					<img alt="" data-srcset="https://secure.gravatar.com/avatar/dc4bb79b02602ae74ff0c3202b186bf9?s=300&amp;d=retro&amp;r=g 2x" height="150" width="150" loading="lazy" data-src="https://secure.gravatar.com/avatar/dc4bb79b02602ae74ff0c3202b186bf9?s=150&amp;d=retro&amp;r=g" class="avatar avatar-150 photo lazyloaded" src="./numpy11_files/dc4bb79b02602ae74ff0c3202b186bf9" srcset="https://secure.gravatar.com/avatar/dc4bb79b02602ae74ff0c3202b186bf9?s=300&amp;d=retro&amp;r=g 2x"><noscript><img alt='' src='https://secure.gravatar.com/avatar/dc4bb79b02602ae74ff0c3202b186bf9?s=150&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/dc4bb79b02602ae74ff0c3202b186bf9?s=300&#038;d=retro&#038;r=g 2x' class='avatar avatar-150 photo' height='150' width='150' loading='lazy'/></noscript>
+		            <div class="comment-content">
+		                <div class="comment-author">
+		                    <span class="comment-link">Ulrich Karl </span>
+
+		                    <span class="comment-meta commentmetadata">
+		                    			                        	<span class="comment-date">26 Nov 2019</span>
+		                        
+		                        <a rel="nofollow" class="comment-reply-link" href="https://machinelearnia.com/numpy/#comment-71" data-commentid="71" data-postid="1452" data-belowelement="comment-71" data-respondelement="respond" data-replyto="Répondre à Ulrich Karl" aria-label="Répondre à Ulrich Karl">Répondre</a>
+		                        
+		                    			                    </span>
+		                </div>
+
+		                <div class="clr"></div>
+
+		                <div class="comment-entry">
+		                    
+		                    <div class="comment-content">
+		                        <p>Super Article!</p>
+		                    </div>
+		                </div>
+		            </div>
+
+				</article><!-- #comment-## -->
+
+			<ol class="children">
+
+			<li id="comment-72" class="comment-container">
+
+				<article class="comment byuser comment-author-machi346 bypostauthor odd alt depth-2 comment-body">
+
+					<img alt="" data-srcset="https://secure.gravatar.com/avatar/430a8ec3bdbef965789d1ea85d7151ff?s=300&amp;d=retro&amp;r=g 2x" height="150" width="150" loading="lazy" data-src="https://secure.gravatar.com/avatar/430a8ec3bdbef965789d1ea85d7151ff?s=150&amp;d=retro&amp;r=g" class="avatar avatar-150 photo lazyloaded" src="./numpy11_files/430a8ec3bdbef965789d1ea85d7151ff" srcset="https://secure.gravatar.com/avatar/430a8ec3bdbef965789d1ea85d7151ff?s=300&amp;d=retro&amp;r=g 2x"><noscript><img alt='' src='https://secure.gravatar.com/avatar/430a8ec3bdbef965789d1ea85d7151ff?s=150&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/430a8ec3bdbef965789d1ea85d7151ff?s=300&#038;d=retro&#038;r=g 2x' class='avatar avatar-150 photo' height='150' width='150' loading='lazy'/></noscript>
+		            <div class="comment-content">
+		                <div class="comment-author">
+		                    <span class="comment-link">Guillaume Saint-Cirgue </span>
+
+		                    <span class="comment-meta commentmetadata">
+		                    			                        	<span class="comment-date">26 Nov 2019</span>
+		                        
+		                        <a rel="nofollow" class="comment-reply-link" href="https://machinelearnia.com/numpy/#comment-72" data-commentid="72" data-postid="1452" data-belowelement="comment-72" data-respondelement="respond" data-replyto="Répondre à Guillaume Saint-Cirgue" aria-label="Répondre à Guillaume Saint-Cirgue">Répondre</a>
+		                        
+		                    			                    </span>
+		                </div>
+
+		                <div class="clr"></div>
+
+		                <div class="comment-entry">
+		                    
+		                    <div class="comment-content">
+		                        <p>Merci beaucoup !</p>
+		                    </div>
+		                </div>
+		            </div>
+
+				</article><!-- #comment-## -->
+
+			</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+
+			<li id="comment-257" class="comment-container">
+
+				<article class="comment even thread-odd thread-alt depth-1 comment-body">
+
+					<img alt="" data-srcset="https://secure.gravatar.com/avatar/f4e9bbc77eb07f2a7e3573706923d468?s=300&amp;d=retro&amp;r=g 2x" height="150" width="150" loading="lazy" data-src="https://secure.gravatar.com/avatar/f4e9bbc77eb07f2a7e3573706923d468?s=150&amp;d=retro&amp;r=g" class="avatar avatar-150 photo lazyloaded" src="./numpy11_files/f4e9bbc77eb07f2a7e3573706923d468" srcset="https://secure.gravatar.com/avatar/f4e9bbc77eb07f2a7e3573706923d468?s=300&amp;d=retro&amp;r=g 2x"><noscript><img alt='' src='https://secure.gravatar.com/avatar/f4e9bbc77eb07f2a7e3573706923d468?s=150&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/f4e9bbc77eb07f2a7e3573706923d468?s=300&#038;d=retro&#038;r=g 2x' class='avatar avatar-150 photo' height='150' width='150' loading='lazy'/></noscript>
+		            <div class="comment-content">
+		                <div class="comment-author">
+		                    <span class="comment-link">René Van Elsuwé </span>
+
+		                    <span class="comment-meta commentmetadata">
+		                    			                        	<span class="comment-date">25 Fév 2020</span>
+		                        
+		                        <a rel="nofollow" class="comment-reply-link" href="https://machinelearnia.com/numpy/#comment-257" data-commentid="257" data-postid="1452" data-belowelement="comment-257" data-respondelement="respond" data-replyto="Répondre à René Van Elsuwé" aria-label="Répondre à René Van Elsuwé">Répondre</a>
+		                        
+		                    			                    </span>
+		                </div>
+
+		                <div class="clr"></div>
+
+		                <div class="comment-entry">
+		                    
+		                    <div class="comment-content">
+		                        <p>Je découvre Python grâce à vos vidéos dans le but d’essayer de comprendre ce qu’est le machine learning . J’en suis à la vidéo 11 et il faudra sans doute beaucoup d’entraînement et d’exemples pour maîtriser tout ça !<br>
+Je vous remercie pour votre pédagogie et la clarté des explications lors des vidéos</p>
+		                    </div>
+		                </div>
+		            </div>
+
+				</article><!-- #comment-## -->
+
+			</li><!-- #comment-## -->
+
+			<li id="comment-338" class="comment-container">
+
+				<article class="comment odd alt thread-even depth-1 comment-body">
+
+					<img alt="" data-srcset="https://secure.gravatar.com/avatar/f2f10e2ed678bece795e285b237919ad?s=300&amp;d=retro&amp;r=g 2x" height="150" width="150" loading="lazy" data-src="https://secure.gravatar.com/avatar/f2f10e2ed678bece795e285b237919ad?s=150&amp;d=retro&amp;r=g" class="avatar avatar-150 photo lazyloaded" src="./numpy11_files/f2f10e2ed678bece795e285b237919ad" srcset="https://secure.gravatar.com/avatar/f2f10e2ed678bece795e285b237919ad?s=300&amp;d=retro&amp;r=g 2x"><noscript><img alt='' src='https://secure.gravatar.com/avatar/f2f10e2ed678bece795e285b237919ad?s=150&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/f2f10e2ed678bece795e285b237919ad?s=300&#038;d=retro&#038;r=g 2x' class='avatar avatar-150 photo' height='150' width='150' loading='lazy'/></noscript>
+		            <div class="comment-content">
+		                <div class="comment-author">
+		                    <span class="comment-link">BISBIS </span>
+
+		                    <span class="comment-meta commentmetadata">
+		                    			                        	<span class="comment-date">9 Avr 2020</span>
+		                        
+		                        <a rel="nofollow" class="comment-reply-link" href="https://machinelearnia.com/numpy/#comment-338" data-commentid="338" data-postid="1452" data-belowelement="comment-338" data-respondelement="respond" data-replyto="Répondre à BISBIS" aria-label="Répondre à BISBIS">Répondre</a>
+		                        
+		                    			                    </span>
+		                </div>
+
+		                <div class="clr"></div>
+
+		                <div class="comment-entry">
+		                    
+		                    <div class="comment-content">
+		                        <p>Bonjour<br>
+Je vous remercie infiniment pour cet excellent travail que vous nous offrez .<br>
+1000 merci</p>
+		                    </div>
+		                </div>
+		            </div>
+
+				</article><!-- #comment-## -->
+
+			</li><!-- #comment-## -->
+
+			<li id="comment-454" class="comment-container">
+
+				<article class="comment even thread-odd thread-alt depth-1 comment-body">
+
+					<img alt="" data-srcset="https://secure.gravatar.com/avatar/7ab56b89c6ed214afe02a0b9b049b331?s=300&amp;d=retro&amp;r=g 2x" height="150" width="150" loading="lazy" data-src="https://secure.gravatar.com/avatar/7ab56b89c6ed214afe02a0b9b049b331?s=150&amp;d=retro&amp;r=g" class="avatar avatar-150 photo lazyloaded" src="./numpy11_files/7ab56b89c6ed214afe02a0b9b049b331" srcset="https://secure.gravatar.com/avatar/7ab56b89c6ed214afe02a0b9b049b331?s=300&amp;d=retro&amp;r=g 2x"><noscript><img alt='' src='https://secure.gravatar.com/avatar/7ab56b89c6ed214afe02a0b9b049b331?s=150&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/7ab56b89c6ed214afe02a0b9b049b331?s=300&#038;d=retro&#038;r=g 2x' class='avatar avatar-150 photo' height='150' width='150' loading='lazy'/></noscript>
+		            <div class="comment-content">
+		                <div class="comment-author">
+		                    <span class="comment-link">Essaid EL HAJI </span>
+
+		                    <span class="comment-meta commentmetadata">
+		                    			                        	<span class="comment-date">28 Juin 2020</span>
+		                        
+		                        <a rel="nofollow" class="comment-reply-link" href="https://machinelearnia.com/numpy/#comment-454" data-commentid="454" data-postid="1452" data-belowelement="comment-454" data-respondelement="respond" data-replyto="Répondre à Essaid EL HAJI" aria-label="Répondre à Essaid EL HAJI">Répondre</a>
+		                        
+		                    			                    </span>
+		                </div>
+
+		                <div class="clr"></div>
+
+		                <div class="comment-entry">
+		                    
+		                    <div class="comment-content">
+		                        <p>Excellent travail. Merci</p>
+		                    </div>
+		                </div>
+		            </div>
+
+				</article><!-- #comment-## -->
+
+			</li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+		
+		
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Laisser un commentaire <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://machinelearnia.com/numpy/#respond" style="display:none;">Annuler la réponse</a></small></h3><form action="https://machinelearnia.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate=""><div class="comment-textarea"><label for="comment" class="screen-reader-text">Comment</label><textarea name="comment" id="comment" cols="39" rows="4" tabindex="0" class="textarea-comment" placeholder="Votre commentaire ici…"></textarea></div><div class="comment-form-author"><label for="author" class="screen-reader-text">Enter your name or username</label><input type="text" name="author" id="author" value="" placeholder="Nom (nécessaire)" size="22" tabindex="0" aria-required="true" class="input-name"></div>
+<div class="comment-form-email"><label for="email" class="screen-reader-text">Enter your email</label><input type="text" name="email" id="email" value="" placeholder="E-mail (nécessaire)" size="22" tabindex="0" aria-required="true" class="input-email"></div>
+<div class="comment-form-url"><label for="url" class="screen-reader-text">Enter your website URL (optional)</label><input type="text" name="url" id="url" value="" placeholder="Site web" size="22" tabindex="0" class="input-website"></div>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Enregistrer mon nom, mon e-mail et mon site dans le navigateur pour mon prochain commentaire.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="comment-submit" class="submit" value="Publier le commentaire"> <input type="hidden" name="comment_post_ID" value="1452" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="15"></p></form>	</div><!-- #respond -->
+	
+</section><!-- #comments -->
+</article>
+				
+			</div><!-- #content -->
+
+			
+		</div><!-- #primary -->
+
+		
+
+<aside id="right-sidebar" class="sidebar-container widget-area sidebar-primary" itemscope="itemscope" itemtype="https://schema.org/WPSideBar" role="complementary" aria-label="Primary Sidebar">
+
+	
+	<div id="right-sidebar-inner" class="clr">
+
+		<div id="ocean_social_share-5" class="sidebar-box widget-oceanwp-social-share social-share clr">				<ul class="owp-social-share style-minimal name-hidden">
+					<li class="twitter"><a href="https://twitter.com/share?text=Tutoriel%20Numpy:%204%20vid%C3%A9os%20pour%20tout%20comprendre&amp;url=https%3A%2F%2Fmachinelearnia.com%2Fnumpy%2F" title="Partager sur Twitter" onclick="owpShareOnClick( this.href );return false;"><span class="owp-icon-wrap"><svg class="owpss-icon" aria-labelledby="owpss-twitter-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"></path>
+							</svg></span></a></li><li class="facebook"><a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fmachinelearnia.com%2Fnumpy%2F" title="Partager sur Facebook" onclick="owpShareOnClick( this.href );return false;"><span class="owp-icon-wrap"><svg class="owpss-icon" aria-labelledby="owpss-facebook-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.677,12.998V8.123h3.575V6.224C9.252,2.949,11.712,0,14.736,0h3.94v4.874h-3.94
+								c-0.432,0-0.934,0.524-0.934,1.308v1.942h4.874v4.874h-4.874V24H9.252V12.998H5.677z"></path>
+							</svg></span></a></li><li class="pinterest"><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fmachinelearnia.com%2Fnumpy%2F&amp;media=https://machinelearnia.com/wp-content/uploads/2019/09/Vignette-YT-Python-0000115_7.png&amp;description=Si+vous+utilisez+Python+pour+faire+du+Machine+Learning%2C+du+Deep+Learning%2C+de+l%27ing%C3%A9nierie+ou+tout+autre+chose+qui+touche+aux+math%C3%A9matiques%2C+alors+vous+devez+commencer+par+apprendre+Numpy.+C%27est+IMP%C3%89RATIF+%21+Pourquoi+%3F+Parce+que+Numpy+est+LE+package%E2%80%A6" title="Partager sur Pinterest" onclick="owpShareOnClick( this.href );return false;"><span class="owp-icon-wrap"><svg class="owpss-icon" aria-labelledby="owpss-pinterest-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.757,17.343c-1.487,0-2.886-0.804-3.365-1.717c0,0-0.8,3.173-0.969,3.785
+								c-0.596,2.165-2.35,4.331-2.487,4.508c-0.095,0.124-0.305,0.085-0.327-0.078c-0.038-0.276-0.485-3.007,0.041-5.235
+								c0.264-1.118,1.772-7.505,1.772-7.505s-0.44-0.879-0.44-2.179c0-2.041,1.183-3.565,2.657-3.565c1.252,0,1.857,0.94,1.857,2.068
+								c0,1.26-0.802,3.142-1.216,4.888c-0.345,1.461,0.734,2.653,2.174,2.653c2.609,0,4.367-3.352,4.367-7.323
+								c0-3.018-2.032-5.278-5.731-5.278c-4.177,0-6.782,3.116-6.782,6.597c0,1.2,0.355,2.047,0.909,2.701
+								c0.255,0.301,0.29,0.422,0.198,0.767c-0.067,0.254-0.218,0.864-0.281,1.106c-0.092,0.349-0.375,0.474-0.69,0.345
+								c-1.923-0.785-2.82-2.893-2.82-5.262c0-3.912,3.3-8.604,9.844-8.604c5.259,0,8.72,3.805,8.72,7.89
+								C21.188,13.307,18.185,17.343,13.757,17.343z"></path>
+							</svg></span></a></li><li class="linkedin"><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fmachinelearnia.com%2Fnumpy%2F&amp;title=Tutoriel%20Numpy:%204%20vid%C3%A9os%20pour%20tout%20comprendre&amp;summary=Si+vous+utilisez+Python+pour+faire+du+Machine+Learning%2C+du+Deep+Learning%2C+de+l%27ing%C3%A9nierie+ou+tout+autre+chose+qui+touche+aux+math%C3%A9matiques%2C+alors+vous+devez+commencer+par+apprendre+Numpy.+C%27est+IMP%C3%89RATIF+%21+Pourquoi+%3F+Parce+que+Numpy+est+LE+package%E2%80%A6&amp;source=https://machinelearnia.com/" title="Partager sur LinkedIn" onclick="owpShareOnClick( this.href );return false;"><span class="owp-icon-wrap"><svg class="owpss-icon" aria-labelledby="owpss-linkedin-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.52,22h-4.13V8.667h4.13V22z M4.436,6.92
+								c-1.349,0-2.442-1.101-2.442-2.46C1.994,3.102,3.087,2,4.436,2s2.442,1.102,2.442,2.46C6.877,5.819,5.784,6.92,4.436,6.92z
+								M21.994,22h-4.109c0,0,0-5.079,0-6.999c0-1.919-0.73-2.991-2.249-2.991c-1.652,0-2.515,1.116-2.515,2.991c0,2.054,0,6.999,0,6.999
+								h-3.96V8.667h3.96v1.796c0,0,1.191-2.202,4.02-2.202c2.828,0,4.853,1.727,4.853,5.298C21.994,17.129,21.994,22,21.994,22z"></path>
+							</svg></span></a></li><li class="reddit"><a href="https://www.reddit.com/submit?url=https%3A%2F%2Fmachinelearnia.com%2Fnumpy%2F&amp;title=Tutoriel%20Numpy:%204%20vid%C3%A9os%20pour%20tout%20comprendre" title="Partager sur Reddit" onclick="owpShareOnClick( this.href );return false;"><span class="owp-icon-wrap"><svg class="owpss-icon" aria-labelledby="owpss-reddit-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M23.999,11.786c0-1.576-1.294-2.858-2.885-2.858c-0.689,0-1.321,0.241-1.817,0.641
+								c-1.759-1.095-3.991-1.755-6.383-1.895l1.248-3.91l3.43,0.8c0.09,1.237,1.134,2.217,2.405,2.217c1.33,0,2.412-1.072,2.412-2.391
+								c0-1.318-1.082-2.39-2.412-2.39c-0.93,0-1.739,0.525-2.141,1.291l-3.985-0.93c-0.334-0.078-0.671,0.112-0.775,0.436L11.547,7.65
+								C8.969,7.712,6.546,8.375,4.658,9.534c-0.49-0.38-1.105-0.607-1.774-0.607C1.293,8.927,0,10.209,0,11.785
+								c0,0.974,0.495,1.836,1.249,2.351c-0.031,0.227-0.048,0.455-0.048,0.686c0,1.97,1.156,3.803,3.254,5.16
+								C6.468,21.283,9.13,22,11.952,22s5.485-0.716,7.496-2.018c2.099-1.357,3.254-3.19,3.254-5.16c0-0.21-0.014-0.419-0.041-0.626
+								C23.464,13.689,23.999,12.798,23.999,11.786 M19.997,3.299c0.607,0,1.102,0.49,1.102,1.091c0,0.602-0.494,1.092-1.102,1.092
+								s-1.102-0.49-1.102-1.092C18.896,3.789,19.389,3.299,19.997,3.299 M6.805,13.554c0-0.888,0.752-1.633,1.648-1.633
+								c0.897,0,1.625,0.745,1.625,1.633c0,0.889-0.728,1.61-1.625,1.61C7.557,15.163,6.805,14.442,6.805,13.554 M15.951,18.288
+								c-0.836,0.827-2.124,1.229-3.939,1.229c-0.004,0-0.008-0.001-0.013-0.001c-0.004,0-0.008,0.001-0.013,0.001
+								c-1.815,0-3.103-0.402-3.938-1.229c-0.256-0.254-0.256-0.665,0-0.919c0.256-0.253,0.671-0.253,0.927,0
+								c0.576,0.571,1.561,0.849,3.01,0.849c0.005,0,0.009,0.001,0.013,0.001c0.005,0,0.009-0.001,0.013-0.001
+								c1.45,0,2.435-0.278,3.012-0.849c0.256-0.254,0.671-0.253,0.927,0C16.206,17.623,16.206,18.034,15.951,18.288 M15.569,15.163
+								c-0.897,0-1.651-0.721-1.651-1.61s0.754-1.633,1.651-1.633s1.625,0.745,1.625,1.633C17.193,14.442,16.466,15.163,15.569,15.163"></path>
+							</svg></span></a></li>				</ul>
+
+				
+		
+			</div><div id="categories-4" class="sidebar-box widget_categories clr"><h4 class="widget-title">Catégories</h4>
+			<ul>
+					<li class="cat-item cat-item-7"><a href="https://machinelearnia.com/blog/">Blog</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="https://machinelearnia.com/divers/">Divers</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://machinelearnia.com/machine-learning/" title="Accueil&gt;Python&gt;Tutoriel Numpy: 4 vidéos pour tout comprendre
+Apprendre les Bases du Machine Learning">Machine Learning</a>
+</li>
+	<li class="cat-item cat-item-63"><a href="https://machinelearnia.com/python-machine-learning/" title="Accueil&gt;Python&gt;Tutoriel Numpy: 4 vidéos pour tout comprendre
+Tutoriels Python pour le Machine Learning">Python</a>
+</li>
+			</ul>
+
+			</div><div id="ocean_about_me-3" class="sidebar-box widget-oceanwp-about-me about-me-widget clr"><h4 class="widget-title">A Propos</h4>
+				<div class="oceanwp-about-me">
+
+					<div class="oceanwp-about-me-avatar clr">
+
+													<img alt="A Propos" data-src="https://machinelearnia.com/wp-content/uploads/2019/09/IMG_3730-1024x768-Copy.jpg" class=" ls-is-cached lazyloaded" src="./numpy11_files/IMG_3730-1024x768-Copy.jpg"><noscript><img src="https://machinelearnia.com/wp-content/uploads/2019/09/IMG_3730-1024x768-Copy.jpg" alt="A Propos" /></noscript>
+													<h3 class="oceanwp-about-me-name">Guillaume Saint-Cirgue</h3>
+						
+					</div><!-- .oceanwp-about-me-avatar -->
+
+											<div class="oceanwp-about-me-text clr">Lead Data Scientist à Londres.
+Je supervise la transformation numérique (Industry 4.0) de l’industrie aérospatiale avec l’installation d’usines connectées et le déploiement de systèmes intelligents.
+
+Je désire aider tous ceux qui sont motivés pour apprendre le machine learning.
+Je vous transmettrai tout mon savoir pour que vous atteignez vos buts.</div>
+					
+						<ul class="oceanwp-about-me-social style-dark">
+							
+						</ul>
+
+					
+				</div>
+
+			</div><div id="custom_html-2" class="widget_text sidebar-box widget_custom_html clr"><div class="textwidget custom-html-widget"><iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="400" data-src="https://app.mailjet.com/widget/iframe/4FFS/jXC" class="mj-w-res-iframe lazyloaded" src="./numpy11_files/saved_resource(4).html" id="iFrameResizer0" style="overflow: hidden;"></iframe>
+
+<script type="text/javascript" src="./numpy11_files/iframeResizer.min.js.téléchargement"></script></div></div><div id="archives-4" class="sidebar-box widget_archive clr"><h4 class="widget-title">Archives</h4>
+			<ul>
+					<li><a href="https://machinelearnia.com/2020/01/">janvier 2020</a>&nbsp;(1)</li>
+	<li><a href="https://machinelearnia.com/2019/10/">octobre 2019</a>&nbsp;(2)</li>
+	<li><a href="https://machinelearnia.com/2019/09/">septembre 2019</a>&nbsp;(4)</li>
+	<li><a href="https://machinelearnia.com/2019/07/">juillet 2019</a>&nbsp;(5)</li>
+	<li><a href="https://machinelearnia.com/2019/06/">juin 2019</a>&nbsp;(2)</li>
+	<li><a href="https://machinelearnia.com/2019/03/">mars 2019</a>&nbsp;(2)</li>
+			</ul>
+
+			</div>
+	</div><!-- #sidebar-inner -->
+
+	
+</aside><!-- #right-sidebar -->
+
+
+	</div><!-- #content-wrap -->
+
+	
+
+        </main><!-- #main -->
+
+        
+        
+        
+            
+<footer id="footer" class="site-footer" itemscope="itemscope" itemtype="https://schema.org/WPFooter" role="contentinfo">
+
+    
+    <div id="footer-inner" class="clr">
+
+        
+
+<div id="footer-widgets" class="oceanwp-row clr">
+
+	
+	<div class="footer-widgets-inner container">
+
+        			<div class="footer-box span_1_of_4 col col-1">
+							</div><!-- .footer-one-box -->
+
+							<div class="footer-box span_1_of_4 col col-2">
+									</div><!-- .footer-one-box -->
+						
+							<div class="footer-box span_1_of_4 col col-3 ">
+									</div><!-- .footer-one-box -->
+			
+							<div class="footer-box span_1_of_4 col col-4">
+									</div><!-- .footer-box -->
+			
+		
+	</div><!-- .container -->
+
+	
+</div><!-- #footer-widgets -->
+
+
+
+<div id="footer-bottom" class="clr">
+
+	
+	<div id="footer-bottom-inner" class="container clr">
+
+		
+			<div id="footer-bottom-menu" class="navigation clr">
+				<div class="menu-social-links-menu-container"><ul id="menu-social-links-menu" class="menu"><li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32"><a href="https://www.youtube.com/channel/UCmpptkXu8iIFe6kfDK5o7VQ?view_as=subscriber">Youtube</a></li>
+<li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33"><a href="https://www.facebook.com/Machine-Learnia-401142360618696/?modal=admin_todo_tour">Facebook</a></li>
+<li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="https://twitter.com/MLearnia">Twitter</a></li>
+<li id="menu-item-35" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35"><a href="https://www.instagram.com/machinelearnia/?hl=en">Instagram</a></li>
+<li id="menu-item-36" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36"><a href="http://contact@machinelearnia.com/">E-mail</a></li>
+</ul></div>
+			</div><!-- #footer-bottom-menu -->
+
+		
+		
+			<div id="copyright" class="clr" role="contentinfo">
+				Copyright 2021 - Guillaume Saint-Cirgue			</div><!-- #copyright -->
+
+		
+	</div><!-- #footer-bottom-inner -->
+
+	
+</div><!-- #footer-bottom -->
+
+
+    </div><!-- #footer-inner -->
+
+    
+</footer><!-- #footer -->
+        
+        
+    </div><!-- #wrap -->
+
+    
+</div><!-- #outer-wrap -->
+
+
+
+<a id="scroll-top" class="scroll-top-right" href="https://machinelearnia.com/numpy/#" style="display: inline;"><span class="fa fa-chevron-up" aria-label="Scroll to the top of the page"></span></a>
+
+
+<div id="sidr-close">
+	<a href="https://machinelearnia.com/numpy/#" class="toggle-sidr-close" aria-label="Close mobile Menu">
+		<i class="icon icon-close" aria-hidden="true"></i><span class="close-text">Fermer le menu</span>
+	</a>
+</div>
+    
+	<div id="mobile-nav" class="navigation clr">
+
+		<ul id="menu-top-menu-1" class="mobile-menu dropdown-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-133"><a href="https://machinelearnia.com/">Accueil</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1470"><a href="https://machinelearnia.com/machine-learning/">Machine Learning</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1477"><a href="https://machinelearnia.com/python-machine-learning/">Python</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-989"><a href="https://machinelearnia.com/blog/">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="https://machinelearnia.com/a-propos/">A propos</a></li>
+</ul>
+	</div>
+
+
+    
+<div id="mobile-menu-search" class="clr">
+	<form method="get" action="https://machinelearnia.com/" class="mobile-searchform" role="search" aria-label="Search for:">
+		<label for="ocean-mobile-search2">
+			<input type="search" name="s" autocomplete="off" placeholder="Rechercher">
+			<button type="submit" class="searchform-submit" aria-label="Submit Search">
+				<i class="icon icon-magnifier" aria-hidden="true"></i>
+			</button>
+					</label>
+			</form>
+</div><!-- .mobile-menu-search -->
+
+<script>if (document.location.protocol != "https:") {document.location = document.URL.replace(/^http:/i, "https:");}</script><script type="text/javascript" src="./numpy11_files/shCore.js.téléchargement" id="syntaxhighlighter-core-js"></script>
+<script type="text/javascript" src="./numpy11_files/shBrushPython.js.téléchargement" id="syntaxhighlighter-brush-python-js"></script>
+<script type="text/javascript">
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "https://machinelearnia.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.9b";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.head.appendChild( corecss );
+		var themecssurl = "https://machinelearnia.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeMidnight.css?ver=3.0.9b";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		document.head.appendChild( themecss );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+
+	// Infinite scroll support
+	if ( typeof( jQuery ) !== 'undefined' ) {
+		jQuery( function( $ ) {
+			$( document.body ).on( 'post-load', function() {
+				SyntaxHighlighter.highlight();
+			} );
+		} );
+	}
+</script>
+<script type="text/javascript" id="pt-cv-content-views-script-js-extra">
+/* <![CDATA[ */
+var PT_CV_PUBLIC = {"_prefix":"pt-cv-","page_to_show":"5","_nonce":"0ff2056208","is_admin":"","is_mobile":"","ajaxurl":"https:\/\/machinelearnia.com\/wp-admin\/admin-ajax.php","lang":"","loading_image_src":"data:image\/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP\/\/\/yH\/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC\/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM\/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM\/DJKZNLND\/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw=="};
+var PT_CV_PAGINATION = {"first":"\u00ab","prev":"\u2039","next":"\u203a","last":"\u00bb","goto_first":"Aller \u00e0 la premi\u00e8re page","goto_prev":"Aller \u00e0 la page pr\u00e9c\u00e9dente","goto_next":"Aller \u00e0 la page suivante","goto_last":"Aller \u00e0 la derni\u00e8re page","current_page":"La page actuelle est","goto_page":"Aller \u00e0 la page"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./numpy11_files/cv.js.téléchargement" id="pt-cv-content-views-script-js"></script>
+<script type="text/javascript" src="./numpy11_files/smush-lazy-load.min.js.téléchargement" id="smush-lazy-load-js"></script>
+<script type="text/javascript" id="smush-lazy-load-js-after">
+lazySizes.cfg.nativeLoading={setLoadingAttribute:false,disableListeners:{scroll:true}};lazySizes.init();
+</script>
+<script type="text/javascript" src="./numpy11_files/comment-reply.min.js.téléchargement" id="comment-reply-js"></script>
+<script type="text/javascript" src="./numpy11_files/imagesloaded.min.js.téléchargement" id="imagesloaded-js"></script>
+<script type="text/javascript" src="./numpy11_files/magnific-popup.min.js.téléchargement" id="magnific-popup-js"></script>
+<script type="text/javascript" src="./numpy11_files/lightbox.min.js.téléchargement" id="oceanwp-lightbox-js"></script>
+<script type="text/javascript" id="oceanwp-main-js-extra">
+/* <![CDATA[ */
+var oceanwpLocalize = {"isRTL":"","menuSearchStyle":"drop_down","sidrSource":"#sidr-close, #mobile-nav, #mobile-menu-search","sidrDisplace":"1","sidrSide":"left","sidrDropdownTarget":"link","verticalHeaderTarget":"link","customSelects":".woocommerce-ordering .orderby, #dropdown_product_cat, .widget_categories select, .widget_archive select, .single-product .variations_form .variations select","ajax_url":"https:\/\/machinelearnia.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./numpy11_files/main.min.js.téléchargement" id="oceanwp-main-js"></script>
+<script type="text/javascript" src="./numpy11_files/share.min.js.téléchargement" id="oe-social-share-js"></script>
+<script type="text/javascript" src="./numpy11_files/social.min.js.téléchargement" id="oss-social-share-script-js"></script>
+<script type="text/javascript" src="./numpy11_files/wp-embed.min.js.téléchargement" id="wp-embed-js"></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='https://machinelearnia.com/wp-content/themes/oceanwp/assets/js/third/html5.min.js?ver=1.8.3' id='html5shiv-js'></script>
+<![endif]-->
+
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Page Caching using disk: enhanced 
+
+Served from: machinelearnia.com @ 2021-04-25 10:19:37 by W3 Total Cache
+--></body></html>
